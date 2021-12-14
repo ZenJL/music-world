@@ -46,7 +46,7 @@ if (empty($errors)) {
     );
     if(check_product_exist ($conn,$data)){
         create_product ($conn,$data);
-        move_uploaded_file($_FILES["image"]["tmp"],'../public/'upload/'.$file);
+        move_uploaded_file($_FILES["image"]["tmp"],'../public/upload/'.$file);
 
         hearder ("location:index.php?module=product");
         exit();
