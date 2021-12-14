@@ -130,11 +130,11 @@ if (empty($errors)) {
                 <div class="form-group">
                     <label>Tên sản phẩm</label>
                     <input type="text" name="name" class="form-control" placeholder="Vui lòng nhập tên sản phẩm ">
-                    <?<php>
+                    <?php
                 if(isset($_POST["name"])){
                     echo 'value = "'.$_POST["name"].'"';
             }
-            </php>
+            ?>
 
     </div>
 
