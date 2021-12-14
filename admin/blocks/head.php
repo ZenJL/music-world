@@ -9,6 +9,18 @@
 <!-- Theme style -->
 <link rel="stylesheet" href="public/dist/css/adminlte.min.css" />
 
+
+
+<link rel="stylesheet" href="public/blugins/datatable-bs4/css/dataTables.bootstrap4.min.css">
+<link rel="stylesheet" href="public/blugins/datatable-responsive/css/responsive.bootstrap4.min.css">
+<link rel="stylesheet" href="public/plugins/fontawesome-free/css/all.min.css" />
+<!-- Theme style -->
+<link rel="stylesheet" href="public/dist/css/adminlte.min.css" />
+<script type="text/javascrip" src="public/plugins/ckeditor/ckeditor.js/"></script>
+<script type="text/javascrip" src="public/plugins/ckfindor/ckfindor.js/"></script>
+
+
+
 <script type="text/javascript">
     function checkDelete(msg) {
         if (window.confirm(msg)) {
