@@ -15,12 +15,15 @@
             $data = array(
                     // keyname copy exactly like column name at category table on database
                     'name' => $_POST["name"],
+                'parent' => $_POST["parent"],
                 'parent' => 0
             );
 
             // check existed category
-            if (check_catergory_exist($conn, $data["name"])):
+            if (check_catergory_exist($conn, $data)):
                 create_category($conn, $data);
+                header("location: index.php?module=category");
+                exit();
             else:
                 $errors[] = "This category already existed";
             endif;

@@ -8,3 +8,13 @@
 <link rel="stylesheet" href="public/plugins/fontawesome-free/css/all.min.css" />
 <!-- Theme style -->
 <link rel="stylesheet" href="public/dist/css/adminlte.min.css" />
+
+<script type="text/javascript">
+    function checkDelete(msg) {
+        if (window.confirm(msg)) {
+            return true;
+        }
+
+        return false;
+    }
+</script>
