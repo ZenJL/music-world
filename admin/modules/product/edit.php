@@ -20,7 +20,7 @@ if (!check_product_id($conn,$id)){
 header ("location:index.php?module=product$action=index");
 exit();
 }
-$category = get_product($conn,$id);
+$product = get_product($conn,$id);
 
 if (isset($_POST["edit"])){
 
