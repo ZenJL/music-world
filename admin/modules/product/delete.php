@@ -4,6 +4,8 @@ if (!isset($_GET["id"])) {
     exit();
 } else {
     $id = $_GET["id"];
+    echo $id;
+    die();
 
     if (!check_category_id($conn, $id)) {
         header("location: index.php?module=category&action=index");
