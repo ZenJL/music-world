@@ -38,7 +38,7 @@ else:
             );
 
             // check existed category
-            if (check_catergory_exist($conn, $data, true)):
+            if (check_category_exist($conn, $data, true)):
                 edit_category($conn, $data);
                 header("location: index.php?module=category");
                 exit();

@@ -20,7 +20,7 @@
             );
 
             // check existed category
-            if (check_catergory_exist($conn, $data)):
+            if (check_category_exist($conn, $data)):
                 create_category($conn, $data);
                 header("location: index.php?module=category");
                 exit();
