@@ -1,6 +1,6 @@
 <?php
 // check only edit when have id
-if (!isset($_GET['id'])):
+if (!isset($_GET["id"])):
     header('location: index.php?module=category&action=index');
     exit();
 
@@ -11,7 +11,7 @@ else:
     $id = $_GET["id"];
 
     // query select * category
-    $parent_category = get_all_category($conn,true, $id);
+    $parent_category = get_all_category($conn, $id, true);
 
     // check id url
     if (!check_category_id($conn, $id)):
@@ -66,7 +66,7 @@ else:
     <form action="" method="post">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Add Category</h3>
+                <h3 class="card-title">Edit Category</h3>
             </div>
             <div class="card-body">
                 <div class="form-group">
