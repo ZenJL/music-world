@@ -17,7 +17,7 @@
         return $stmt;
     }
 
-    function check_catergory_exist($conn, $data, $edit = false) {
+    function check_category_exist($conn, $data, $edit = false) {
         if (!$edit):
             $stmt = $conn->prepare("SELECT name FROM category WHERE name = :name");
 
