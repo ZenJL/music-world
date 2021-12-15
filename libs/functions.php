@@ -28,8 +28,8 @@
                             <a
                                 onclick="return checkDelete(\'Are you sure you want to delete this category?\')" 
                                 href="index.php?module=category&action=delete&id='.$value["id"].'"
-                                
-                            >Delete</a></td>
+                            >
+                               Delete</a></td>
                         <td><a href="index.php?module=category&action=edit&id='.$value["id"].'">Edit</a></td>
                      </tr>  
                 ';

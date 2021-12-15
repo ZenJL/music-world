@@ -16,7 +16,7 @@
                     // keyname copy exactly like column name at category table on database
                     'name' => $_POST["name"],
                 'parent' => $_POST["parent"],
-                'parent' => 0
+//                'parent' => 0
             );
 
             // check existed category
