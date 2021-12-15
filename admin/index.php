@@ -1,5 +1,12 @@
 <?php
+session_start();
 ob_start();
+
+if(($_SESSION["login"]["level"]) != 1 ) {
+    header("location:login.php");
+    exit();
+}
+
 include ('../config.php');
 include ('../libs/connect.php');    // $conn here
 include ('../libs/functions.php');

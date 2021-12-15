@@ -59,6 +59,14 @@ function edit_user($conn, $user){
     $stmt->bindParam(':level', $user["level"], PDO::PARAM_INT);
     $stmt->bindParam(':id', $user["id"], PDO::PARAM_INT);
     $stmt->execute();
+    return $stmt;
+}
+
+function delete_user($conn, $id){
+    $stmt = $conn->prepare("DELETE FROM  user where id = :id");
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+    return $stmt;
 }
 
 ?>

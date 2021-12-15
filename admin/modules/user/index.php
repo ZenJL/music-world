@@ -25,7 +25,7 @@
     </thead>
     <tbody>
     <?php
-    $products = get_all_user ($conn);
+    $users = get_all_user ($conn);
     $stt = 0;
     foreach ($users as $user){
         $stt++;
@@ -34,7 +34,9 @@
         <td><?php echo $stt?></td>
         <td> <?php echo $users["email"]?></td>
         <td> <?php
-            if ($users["level"] == 1){
+            if ($users["id"] == 1) {
+                echo '<b></b><span class ="text-danger">Superadmin</span></b>';
+            }elseif ($users["level"] == 1){
                 echo '<span class ="text-danger">Admin</span>';
             } else {
                 echo '<span>Member</span>';

@@ -14,6 +14,19 @@ if (!isset($_GET["id"])) {
 
     $user = get_user($conn, $id);
 
+    $edit_myself = null;
+    if ($_SESSION["login"]["id"] == $id){
+        $edit_myself = true;
+    } else {
+        $edit_myself = false;
+    }
+    if ($_SESSION["login"]["id"] != 1 && ($_GET["id"] == 1 || ($user["level"] == 1 && $edit_myself == false))) {
+        echo '<script>
+            alert("You do not have enough admin privileges")
+            window.location.href="location:index.php?module=user&action=index"
+</script>';
+    }
+
     $errors = array();
 
     if (isset($_POST["create"])){
@@ -23,10 +36,12 @@ if (!isset($_GET["id"])) {
         }
 
         $data = array(
-            "level" => $_POST["level"],
             "id" => $id
-
         );
+
+        if(!$edit_myself){
+            $data["level"] = $_POST["level"];
+        }
         if (empty($_POST["password"])) {
             $data["password"] = $user["password"];
         } else {
@@ -81,6 +96,8 @@ if (!isset($_GET["id"])) {
                     <input type="password" name="password_confirmation" class="form-control" placeholder="Please confirm your password">
                 </div>
 
+                <?php if (!$edit_myself) {?>
+
                 <div class="form-group">
                     <label>User level</label>
                     <select name="level" class="form-control">
@@ -97,6 +114,7 @@ if (!isset($_GET["id"])) {
                         ?>>Admin</option>
                     </select>
                 </div>
+                <?php } ?>
 
 
             </div>
