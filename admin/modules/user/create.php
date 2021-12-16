@@ -1,4 +1,5 @@
 <?php
+include "../../model/user.php";
 $errors = array();
 
 if (isset($_POST["create"])):

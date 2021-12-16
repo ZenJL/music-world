@@ -1,27 +1,24 @@
-<?php
+<?php 
 if (!isset($_GET["id"])) {
-    header("location: index.php?module=category&action=index");
+    header("location:index.php?module=product&action=index");
     exit();
 } else {
     $id = $_GET["id"];
-    echo $id;
-    die();
-
-    if (!check_category_id($conn, $id)) {
-        header("location: index.php?module=category&action=index");
+    
+    if (!check_product_id ($conn,$id)) {
+        header("location:index.php?module=product&action=index");
         exit();
     }
 
-    if (!check_category_child($conn, $id)) {
-        echo '<script>
-            alert("Cannot delete category with existed subdata")
-            window.location.href="index.php?module=category&action=index"
-        </script>';
-        exit();
-    } else {
-        delete_category($conn, $id);
-        header("location: index.php?module=category&action=index");
-        exit();
+    $product = get_product ($conn,$id);
+
+    if (file_exists('../public/upload/'.$product["image"])) {
+        unlink('../public/upload/'.$product["image"]);
     }
+    
+    delete_product ($conn,$id);
+
+    header("location:index.php?module=product&action=index");
+    exit();
 }
 ?>
