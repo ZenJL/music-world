@@ -30,7 +30,7 @@ Display List Product
     ?>
     <tr>
                     <td>
-                        <img onerror="imgError(this);" src="../public/upload/<?php echo $" />
+                        <img onerror="imgError(this);" src="../public/upload/<?php echo $"/>
 
                     </td>
                     <td>

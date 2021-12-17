@@ -1,8 +1,11 @@
 <?php
+session_start();
 ob_start();
+include "model/auth.php";
 include "../config.php";
 include "../libs/connect.php";
 include "../libs/functions.php";
+$errors = array();
 
 if(isset($_POST["login"])) {
     if (empty($_POST["email"])) {
@@ -12,15 +15,17 @@ if(isset($_POST["login"])) {
     } elseif (empty($errors)){
         $data = array(
             "email" => $_POST["email"],
-            "password" => md5($_POST["password"]),
+            "password" => $_POST["password"],
             "level" => 1
         );
         $result = login($conn, $data);
+        var_dump($result);
 
         if($result){
             $data = get_user($conn, $data);
             $_SESSION["login"]["id"] = $data["id"];
             $_SESSION["login"]["email"] = $data["email"];
+            var_dump($data);
             $_SESSION["login"]["level"] = $data["level"];
             header("location:index.php");
             exit();

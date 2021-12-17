@@ -1,4 +1,6 @@
 <?php
+
+require_once "model/user.php";
 $errors = array();
 
 if (isset($_POST["create"])):
