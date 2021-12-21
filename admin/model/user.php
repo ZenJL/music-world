@@ -27,6 +27,7 @@ function create_user ($conn,$user) {
     return $stmt;
 }
 
+              
 function get_all_user ($conn) {
     $stmt = $conn->prepare("SELECT * FROM user ORDER BY id DESC");
     $stmt->execute();
@@ -70,5 +71,6 @@ function delete_user ($conn,$id) {
     $stmt->execute();
     return $stmt;
 }
+
 
 ?>
