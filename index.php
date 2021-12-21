@@ -189,9 +189,9 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="album.html">Album</a>
+                            <a href="album.php">Album</a>
                             <ul class="sub-menu">
-                                <li><a href="album.html">Album</a></li>
+                                <li><a href="album.php">Album</a></li>
                                 <li><a href="album-single.html">Album Details</a></li>
                             </ul>
                         </li>
@@ -309,7 +309,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="album.html">Album</a>
+                    <a href="album.php">Album</a>
                 </li>
                 <li>
                     <a href="#0" class="dropdownlink">Events</a>
@@ -1750,7 +1750,10 @@
 <script src="public/js/smoke.js"></script>
 <script src="public/dependencies/FitText.js/js/jquery.fittext.js"></script>
 <script src="public/dependencies/gmap3/js/gmap3.min.js"></script>
-<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<!--<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+
+
 <script src='public/dependencies/tilt.js/js/tilt.jquery.js'></script>
 <script src='public/js/parallax.min.js'></script>
 <!-- Player -->

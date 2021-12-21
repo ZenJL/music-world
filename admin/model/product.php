@@ -95,4 +95,5 @@ function delete_product ($conn,$id) {
 
     return $stmt;
 }
+
 ?>

@@ -11,14 +11,6 @@ require_once "../config.php";
 require_once "../libs/connect.php";
 require_once "../libs/functions.php";
 ?>
-<div class="card">
-    <div class="card-header">
-        <h3 class="card-title">List Product</h3>
-    </div>
-    <div class="card-body">
-        Display List Product
-    </div>
-</div>
 
 <div class="card">
 <div class="card-header">
@@ -73,4 +65,3 @@ require_once "../libs/functions.php";
     </tr>
 </tfoot>
 </table>
-
