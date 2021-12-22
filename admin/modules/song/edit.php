@@ -1,6 +1,6 @@
 <?php 
 if (!isset($_GET["id"])) {
-    header("location:index.php?module=product&action=index");
+    header("location:index.php?module=song&action=index");
     exit();
 } else {
     $errors = array();
@@ -8,7 +8,7 @@ if (!isset($_GET["id"])) {
     $parent_category = get_all_category ($conn);
     
     if (!check_product_id ($conn,$id)) {
-        header("location:index.php?module=product&action=index");
+        header("location:index.php?module=song&action=index");
         exit();
     }
 
@@ -61,7 +61,7 @@ if (!isset($_GET["id"])) {
 
                 edit_product ($conn,$data);
                 
-                header("location:index.php?module=product");
+                header("location:index.php?module=song");
                 exit();
             } else {
                 $errors[] = "Tên sản phẩm này đã tồn tại rồi";

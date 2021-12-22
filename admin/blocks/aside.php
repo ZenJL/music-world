@@ -65,7 +65,7 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-archive"></i>
                         <p>
-                            Product
+                            Song
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -73,13 +73,13 @@
                         <li class="nav-item">
                             <a href="index.php?module=product&action=index" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>List-product</p>
+                                <p>List Songs</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="index.php?module=product&action=create" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Add-product</p>
+                                <p>Add Songs</p>
                             </a>
                         </li>
                     </ul>

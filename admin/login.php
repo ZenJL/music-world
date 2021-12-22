@@ -55,7 +55,7 @@ if(isset($_POST["login"])) {
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="/"><strong>SUM ACADEMY</strong>LTE</a>
+    <a href="/"><strong>Music World</strong></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
