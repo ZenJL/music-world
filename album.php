@@ -158,39 +158,39 @@
 			<div class="header-inner">
 				<div class="tim-container clearfix">
 					<div id="site-logo" class="float-left">
-						<a href="index.html" class="logo-main">
+						<a href="index.php" class="logo-main">
 					<img src="public/image/logo.png" alt="logo">
 				</a>
 
-						<a href="index.html" class="logo-stickky">
+						<a href="index.php" class="logo-stickky">
 					<img src="public/image/logo-sticky.png" alt="logo">
 				</a>
 					</div>
 					<div class="nav float-right">
 						<ul id="main-header-menu">
-							<li class="menu-item-has-children active">
-								<a href="index.html">Home</a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Home Player V1</a></li>
-									<li><a href="index-two.html">Home Player V2</a></li>
-									<li><a href="index-three.html">Home Three</a></li>
-									<li><a href="index-four.html">Home Magazine</a></li>
-									<li><a href="index-five.html">Home Five</a></li>
-								</ul>
+							<li class="menu-item-has-children">
+								<a href="index.php">Home</a>
+<!--								<ul class="sub-menu">-->
+<!--									<li><a href="index.php">Home Player V1</a></li>-->
+<!--									<li><a href="index-two.html">Home Player V2</a></li>-->
+<!--									<li><a href="index-three.html">Home Three</a></li>-->
+<!--									<li><a href="index-four.html">Home Magazine</a></li>-->
+<!--									<li><a href="index-five.html">Home Five</a></li>-->
+<!--								</ul>-->
 							</li>
 							<li class="menu-item-has-children">
-								<a href="artist.html">Aritist</a>
+								<a href="artist.html">Artist</a>
 								<ul class="sub-menu">
 									<li><a href="artist.html">Artist</a></li>
 									<li><a href="artist-single.html">Artist Details</a></li>
 								</ul>
 							</li>
-							<li class="menu-item-has-children">
+							<li class="menu-item-has-children active">
 								<a href="album.php">Album</a>
-								<ul class="sub-menu">
-									<li><a href="album.php">Album</a></li>
-									<li><a href="album-single.html">Album Details</a></li>
-								</ul>
+<!--								<ul class="sub-menu">-->
+<!--									<li><a href="album.php">Album</a></li>-->
+<!--									<li><a href="album-single.html">Album Details</a></li>-->
+<!--								</ul>-->
 							</li>
 							<li class="menu-item-has-children">
 								<a href="event.html">Events</a>
@@ -243,7 +243,7 @@
 		<header id="mobile-nav-wrap">
 			<div class="mob-header-inner d-flex justify-content-between">
 				<div id="mobile-logo" class="d-flex justify-content-start">
-					<a href="index.html"><img src="public/image/logo.png" alt="Site Logo"></a>
+					<a href="index.php"><img src="public/image/logo.png" alt="Site Logo"></a>
 				</div>
 
 				<ul class="user-link nav justify-content-end">
@@ -269,7 +269,7 @@
 			<div class="mobile-nav-top-wrap">
 				<div class="mob-header-inner clearfix">
 					<div class="d-flex justify-content-start mobile-logo">
-						<a href="index.html">
+						<a href="index.php">
 					<img src="public/image/logo-dark.png" alt="Site Logo">
 				</a>
 					</div>
@@ -293,7 +293,7 @@
 					<li>
 						<a href="#0" class="dropdownlink">Home</a>
 						<ul class="submenuItems">
-							<li><a href="index.html">Home One</a></li>
+							<li><a href="index.php">Home One</a></li>
 							<li><a href="index-two.html">Home Two</a></li>
 							<li><a href="index-three.html">Home Three</a></li>
 							<li><a href="index-four.html">Home Four</a></li>
@@ -354,12 +354,11 @@
 		<section class="page-header" data-bg-image="public/media/background/8.jpg">
 			<div class="tim-container">
 				<div class="page-header-title text-center">
-					<h3>Product List</h3>
-					<h2>& Album</h2>
+					<h2>Album</h2>
 				</div>
 
 				<div class="breadcrumbs">
-					<a href="#">Home</a>
+					<a href="index.php">Home</a>
 					<span>/</span>
 					<span>Album</span>
 				</div>
@@ -630,7 +629,7 @@
 					<div class="row">
 						<div class="col-xl-3 col-lg-6 col-sm-6">
 							<div class="footer-about">
-								<a href="index.html" class="footer-logo">
+								<a href="index.php" class="footer-logo">
 							<img src="public/image/logo.png" alt="Logo">
 						</a>
 

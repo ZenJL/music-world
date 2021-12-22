@@ -1,12 +1,12 @@
 <?php 
 if (!isset($_GET["id"])) {
-    header("location:index.php?module=product&action=index");
+    header("location:index.php?module=song&action=index");
     exit();
 } else {
     $id = $_GET["id"];
     
     if (!check_product_id ($conn,$id)) {
-        header("location:index.php?module=product&action=index");
+        header("location:index.php?module=song&action=index");
         exit();
     }
 
@@ -18,7 +18,7 @@ if (!isset($_GET["id"])) {
     
     delete_product ($conn,$id);
 
-    header("location:index.php?module=product&action=index");
+    header("location:index.php?module=song&action=index");
     exit();
 }
 ?>

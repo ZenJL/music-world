@@ -370,7 +370,7 @@ var THEMEIM = THEMEIM || {};
       });
 
       /* Product Grid and List View */
-      var $vw_prod = $('.tim-product-btn-vw');
+      var $vw_prod = $('.tim-song-btn-vw');
 
       if ($vw_prod.length) {
         var $control = $($vw_prod.attr('data-control')),

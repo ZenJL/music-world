@@ -46,7 +46,7 @@ if (isset($_POST["create"])) {
             create_product ($conn,$data);
             move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
 
-            header("location:index.php?module=product");
+            header("location:index.php?module=song");
             exit();
         } else {
             $errors[] = "Tên sản phẩm này đã tồn tại rồi";
