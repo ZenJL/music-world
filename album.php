@@ -84,7 +84,7 @@
 
 					<ul class="user-login float-right">
 						<li><a href="#">Sing Up</a></li>
-						<li><a href="#">Sign In</a></li>
+						<li><a href="admin/login.php">Sign In</a></li>
 						<li class="cart-count">
 							<a href="#">
 						<i class="fa fa-shopping-bag"></i>
@@ -374,30 +374,30 @@
 
 		<section id="album">
 			<div class="tim-container d-flex justify-content-center">
-				<div class="col-xl-10">
+				<div class="col-xl-12">
 
 					<ul class="tim-isotope-filter album-filter-button">
-						<li class="current">
-							<a href="#" data-filter="*">All</a>
+						<li>
+							<a href="#" data-filter=".pop">Pop</a>
 						</li>
 						<li>
-							<a href="#" data-filter=".design">R&B</a>
+							<a href="#" data-filter=".classical">R&B</a>
 						</li>
 						<li>
-							<a href="#" data-filter=".branding">Jazz</a>
+							<a href="#" data-filter=".jazz">Jazz</a>
 						</li>
 						<li>
-							<a href="#" data-filter=".ui">Rock</a>
+							<a href="#" data-filter=".rock">Rock</a>
 						</li>
 						<li>
-							<a href="#" data-filter=".logo">Rap</a>
+							<a href="#" data-filter=".rap">Rap</a>
 						</li>
 					</ul>
 
 					<div class="tim-isotope tim-isotope-1 wow fadeInUp" data-wow-delay="0.8s">
 						<ul class="tim-filter-items tim-album-items grid">
 							<li class="grid-sizer"></li>
-							<li class="tim-album-item grid-item ui logo branding">
+							<li class="tim-album-item grid-item rock rap jazz">
 								<div class="tim-isotope-grid__img effect-active">
 									<img src="public/media/album/1.jpg" alt="album thumb" />
 								</div>
@@ -410,7 +410,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item ui design">
+							<li class="tim-album-item grid-item rock classical">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/2.jpg" alt="album thumb" />
 								</div>
@@ -423,7 +423,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item logo">
+							<li class="tim-album-item grid-item rap">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/3.jpg" alt="album thumb" />
 								</div>
@@ -436,7 +436,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item design ui">
+							<li class="tim-album-item grid-item classical rock">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/4.jpg" alt="album thumb" />
 								</div>
@@ -449,7 +449,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item design ui">
+							<li class="tim-album-item grid-item classical rock">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/5.jpg" alt="album thumb" />
 								</div>
@@ -462,7 +462,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item design">
+							<li class="tim-album-item grid-item classical">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/6.jpg" alt="album thumb" />
 								</div>
@@ -475,7 +475,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item branding">
+							<li class="tim-album-item grid-item jazz">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/7.jpg" alt="album thumb" />
 								</div>
@@ -488,7 +488,7 @@
 									</div>
 								</div>
 							</li>
-							<li class="tim-album-item grid-item branding logo">
+							<li class="tim-album-item grid-item jazz rap">
 								<div class="tim-isotope-grid__img">
 									<img src="public/media/album/8.jpg" alt="album thumb" />
 								</div>
