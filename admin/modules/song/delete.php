@@ -5,18 +5,18 @@ if (!isset($_GET["id"])) {
 } else {
     $id = $_GET["id"];
     
-    if (!check_product_id ($conn,$id)) {
+    if (!check_song_id() ($conn,$id)) {
         header("location:index.php?module=song&action=index");
         exit();
     }
 
-    $product = get_product ($conn,$id);
+    $song = get_song() ($conn,$id);
 
-    if (file_exists('../public/upload/'.$product["image"])) {
-        unlink('../public/upload/'.$product["image"]);
+    if (file_exists('../public/upload/'.$song["image"])) {
+        unlink('../public/upload/'.$song["image"]);
     }
     
-    delete_product ($conn,$id);
+    delete_song() ($conn,$id);
 
     header("location:index.php?module=song&action=index");
     exit();

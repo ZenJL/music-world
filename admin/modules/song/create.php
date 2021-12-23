@@ -1,14 +1,15 @@
-<?php 
+<?php
+
 $errors = array();
 $parent_category = get_all_category ($conn);
 
 if (isset($_POST["create"])) {
 
-    if (empty($_POST["name"])) {
-        $errors[] = "Vui lòng nhập tên sản phẩm";
+    if (empty($_POST["song_name"])) {
+        $errors[] = "Enter song name";
     }
 
-    if (empty($_POST["price"])) {
+    if (empty($_POST["category"])) {
         $errors[] = "Vui lòng nhập giá sản phẩm";
     }
 
@@ -42,8 +43,8 @@ if (isset($_POST["create"])) {
             "category_id" => $_POST["category_id"]
         );
 
-        if (check_product_exist ($conn,$data)) {
-            create_product ($conn,$data);
+        if (check_song_exist ($conn,$data)) {
+            create_song ($conn,$data);
             move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
 
             header("location:index.php?module=song");
@@ -70,58 +71,53 @@ if (isset($_POST["create"])) {
 <form method="POST" action="" enctype="multipart/form-data">
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Thêm sản phẩm</h3>
+            <h3 class="card-title">Add song</h3>
         </div>
         <div class="card-body">
             <div class="form-group">
-                <label>Thể loại</label>
+                <label>Category</label>
                 <select class="form-control" name="category_id">
                     <?php recursiveOption ($parent_category,$_POST["category_id"],3) ?>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>Tên sản phẩm</label>
-                <input type="text" name="name" class="form-control" placeholder="Vui lòng nhập tên sản phẩm"
+                <label>Song name</label>
+                <input type="text" name="song_name" class="form-control" placeholder="Enter song name"
                     <?php 
-                        if (isset($_POST["name"])) {
-                            echo 'value="'.$_POST["name"].'"';
+                        if (isset($_POST["song_name"])) {
+                            echo 'value="'.$_POST["song_name"].'"';
                         }
                     ?>
                 >
             </div>
 
             <div class="form-group">
-                <label>Giá</label>
-                <input type="text" name="price" class="form-control" placeholder="Vui lòng nhập giá sản phẩm"
-                    <?php 
-                        if (isset($_POST["price"])) {
-                            echo 'value="'.$_POST["price"].'"';
-                        }
+                <label>Artist</label> <br>
+<!--                <input type="text" name="id_artist" class="form-control" placeholder="Enter song's artist">-->
+                <select class="form-control" name="id_artist">
+                    <?php
+                    $artists = get_all_artist($conn);
+                    foreach($artists as $artist){
                     ?>
-                >
+                        <option value="<?php echo $artist["id_artist"] ?>" >
+                            <?php echo $artist["artist_name"]?>
+                        </option>
+                    <?php } ?>
+                </select>
+            </div>
+
+
+            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                <label>Song release date (YYYY-MM-DD)</label>
+                <input placeholder="2021-12-31" type="text" id="example" name="song_date" class="form-control">
             </div>
 
             <div class="form-group">
-                <label>Tóm tắt</label>
-                <textarea class="form-control" name="intro"><?php 
-                    if (isset($_POST["intro"])) {
-                        echo $_POST["intro"];
-                    }
-                ?></textarea>
-                <script>
-                    CKEDITOR.replace('intro',{
-                        filebrowserBrowseUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/ckfinder.html',
-                        filebrowserUploadUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    });
-                </script>
-            </div>
-
-            <div class="form-group">
-                <label>Nội dung</label>
-                <textarea class="form-control" name="content"><?php 
-                    if (isset($_POST["content"])) {
-                        echo $_POST["content"];
+                <label>Song lyric</label>
+             <textarea class="form-control" name="content"><?php
+                    if (isset($_POST["song_lyric"])) {
+                        echo $_POST["song_lyric"];
                     }
                 ?></textarea>
                 <script>
@@ -133,33 +129,18 @@ if (isset($_POST["create"])) {
             </div>
 
             <div class="form-group">
-                <label>Hình ảnh</label>
+                <label>Image</label>
                 <div class="custom-file">
                     <input type="file" name="image" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
             </div>
 
-            <div class="form-group">
-                <label>Trạng thái</label>
-                <select class="form-control" name="status">
-                    <option value="1">Hiển thị</option>
-                    <option value="0">Ẩn</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Nổi bật</label>
-                <select class="form-control" name="featured">
-                    <option value="0">Ẩn</option>
-                    <option value="1">Hiển thị</option>
-                </select>
-            </div>
         </div>
         <div class="card-footer">
-            <button type="submit" name="create" class="btn btn-info">Thêm</button>
+            <button type="submit" name="create" class="btn btn-info">Add</button>
 
-            <button type="reset" class="btn btn-default float-right">Xóa</button>
+            <button type="reset" class="btn btn-default float-right">Delete</button>
         </div>
     </div>
 </form>
