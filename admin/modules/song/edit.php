@@ -7,12 +7,12 @@ if (!isset($_GET["id"])) {
     $id = $_GET["id"];
     $parent_category = get_all_category ($conn);
     
-    if (!check_product_id ($conn,$id)) {
+    if (!check_song_id ($conn,$id)) {
         header("location:index.php?module=song&action=index");
         exit();
     }
 
-    $product = get_product ($conn,$id);
+    $song = get_song ($conn,$id);
 
     if (isset($_POST["edit"])) {
 
@@ -45,7 +45,7 @@ if (!isset($_GET["id"])) {
                 "id" => $id
             );
 
-            if (check_product_exist ($conn,$data,true)) {
+            if (check_song_exist ($conn,$data,true)) {
 
                 if (!empty($_FILES["image"]["name"])) {
                     if (!checkExt($_FILES["image"]["name"])) {
@@ -56,10 +56,10 @@ if (!isset($_GET["id"])) {
                         move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
                     }
                 } else {
-                    $data["image"] = $product["image"];
+                    $data["image"] = $song["image"];
                 }
 
-                edit_product ($conn,$data);
+                edit_song ($conn,$data);
                 
                 header("location:index.php?module=song");
                 exit();
@@ -102,7 +102,7 @@ if (!isset($_GET["id"])) {
                             if (isset($_POST["name"])) {
                                 echo 'value="'.$_POST["name"].'"';
                             } else {
-                                echo 'value="'.$product["name"].'"';
+                                echo 'value="'.$song["name"].'"';
                             }
                         ?>
                     >
@@ -115,7 +115,7 @@ if (!isset($_GET["id"])) {
                             if (isset($_POST["price"])) {
                                 echo 'value="'.$_POST["price"].'"';
                             } else {
-                                echo 'value="'.$product["price"].'"';
+                                echo 'value="'.$song["price"].'"';
                             }
                         ?>
                     >
@@ -127,7 +127,7 @@ if (!isset($_GET["id"])) {
                         if (isset($_POST["intro"])) {
                             echo $_POST["intro"];
                         } else {
-                            echo $product["intro"];
+                            echo $song["intro"];
                         }
                     ?></textarea>
                     <script>
@@ -144,7 +144,7 @@ if (!isset($_GET["id"])) {
                         if (isset($_POST["content"])) {
                             echo $_POST["content"];
                         } else {
-                            echo $product["content"];
+                            echo $song["content"];
                         }
                     ?></textarea>
                     <script>
@@ -157,7 +157,7 @@ if (!isset($_GET["id"])) {
 
                 <div class="form-group">
                     <label>Hình ảnh hiện tại</label>
-                    <img src="../public/upload/<?php echo $product["image"] ?>" onerror="imgError(this);" width="100px" class="d-block" />
+                    <img src="../public/upload/<?php echo $song["image"] ?>" onerror="imgError(this);" width="100px" class="d-block" />
                 </div>
 
                 <div class="form-group">
@@ -172,12 +172,12 @@ if (!isset($_GET["id"])) {
                     <label>Trạng thái</label>
                     <select class="form-control" name="status">
                         <option value="1" <?php 
-                            if ($product["status"] == 1) {
+                            if ($song["status"] == 1) {
                                 echo "selected";
                             }
                         ?>>Hiển thị</option>
                         <option value="0" <?php 
-                            if ($product["status"] == 0) {
+                            if ($song["status"] == 0) {
                                 echo "selected";
                             }
                         ?>>Ẩn</option>
@@ -188,12 +188,12 @@ if (!isset($_GET["id"])) {
                     <label>Nổi bật</label>
                     <select class="form-control" name="featured">
                         <option value="0"<?php 
-                            if ($product["featured"] == 0) {
+                            if ($song["featured"] == 0) {
                                 echo "selected";
                             }
                         ?>>Ẩn</option>
                         <option value="1"<?php 
-                            if ($product["featured"] == 1) {
+                            if ($song["featured"] == 1) {
                                 echo "selected";
                             }
                         ?>>Hiển thị</option>
