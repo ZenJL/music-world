@@ -71,13 +71,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="index.php?module=product&action=index" class="nav-link">
+                            <a href="index.php?module=song&action=index" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List Songs</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="index.php?module=product&action=create" class="nav-link">
+                            <a href="index.php?module=song&action=create" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Songs</p>
                             </a>

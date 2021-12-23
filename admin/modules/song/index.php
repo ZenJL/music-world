@@ -6,12 +6,15 @@
         <table id="datatable" class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>Hình</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Thể loại</th>
-                    <th>Giá</th>
-                    <th>Trạng thái</th>
-                    <th>Nổi bật</th>
+                    <th>Song id</th>
+                    <th>Image</th>
+                    <th>Song name</th>
+                    <th>Artist</th>
+                    <th>Song lyric</th>
+                    <th>Release date</th>
+                    <th>Category</th>
+                    <th>Song download count</th>
+
                     <th>Xóa</th>
                     <th>Sửa</th>
                 </tr>
@@ -29,8 +32,8 @@
                     <td><?php echo $song["cname"] ?></td>
                     <td><?php echo number_format($song["price"],0,"",".") ?></td>
 
-                    <td><a onClick="return checkDelete('Bạn có chắc muốn xóa sản phẩm này hay không ?')" href="index.php?module=song&action=delete&id=<?php echo $song["id"] ?>">Xóa</a></td>
-                    <td><a href="index.php?module=song&action=edit&id=<?php echo $song["id"] ?>">Sửa</a></td>
+                    <td><a onClick="return checkDelete('Delete this song?')" href="index.php?module=song&action=delete&id=<?php echo $song["id_song"] ?>">Delete</a></td>
+                    <td><a href="index.php?module=song&action=edit&id=<?php echo $song["id"] ?>">Edit</a></td>
                 </tr>
                 <?php 
                     }
@@ -38,14 +41,14 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Hình</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Thể loại</th>
-                    <th>Giá</th>
-                    <th>Trạng thái</th>
-                    <th>Nổi bật</th>
-                    <th>Xóa</th>
-                    <th>Sửa</th>
+                    <th>Song id</th>
+                    <th>Image</th>
+                    <th>Song name</th>
+                    <th>Artist</th>
+                    <th>Song lyric</th>
+                    <th>Release date</th>
+                    <th>Category</th>
+                    <th>Song download count</th>
                 </tr>
             </tfoot>
         </table>
