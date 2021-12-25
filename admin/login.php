@@ -19,7 +19,6 @@ if(isset($_POST["login"])) {
             "level" => 1
         );
         $result = login($conn, $data);
-        var_dump($result);
 
         if($result){
             $data = get_user($conn, $data);

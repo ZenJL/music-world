@@ -10,36 +10,34 @@ if (isset($_POST["create"])) {
     }
 
     if (empty($_POST["category"])) {
-        $errors[] = "Vui lòng nhập giá sản phẩm";
+        $errors[] = "Please enter song category";
     }
 
-    if (!is_numeric($_POST["price"])) {
-        $errors[] = "Giá sản phẩm phải là số";
+    if (empty($_POST["song_lyric"])) {
+        $errors[] = "Please enter song lyric";
     }
 
-    if (empty($_POST["intro"])) {
-        $errors[] = "Vui lòng nhập tóm tắt";
+    if (empty($_POST["song_date"])) {
+        $errors[] = "Please enter song release date";
     }
 
     if (empty($_FILES["image"]["name"])) {
-        $errors[] = "Vui lòng nhập hình";
+        $errors[] = "Please select an image";
     }
 
     if (!checkExt($_FILES["image"]["name"])) {
-        $errors[] = "Không phải là file hình";
+        $errors[] = "Not in image file";
     }
 
     if (empty($errors)) {
         $file = changeNameFile($_FILES["image"]["name"]);
 
         $data = array(
-            'name' => $_POST["name"],
-            'price' => $_POST["price"],
-            'intro' => $_POST["intro"],
-            'content' => $_POST["content"],
+            'song_name' => $_POST["song_name"],
+            'id_artist' => $_POST["id_artist"],
+            'song_lyric' => $_POST["song_lyric"],
+            'song_date' => $_POST["song_date"],
             'image' => $file,
-            'status' => $_POST["status"],
-            "featured" => $_POST["featured"],
             "category_id" => $_POST["category_id"]
         );
 
@@ -50,7 +48,7 @@ if (isset($_POST["create"])) {
             header("location:index.php?module=song");
             exit();
         } else {
-            $errors[] = "Tên sản phẩm này đã tồn tại rồi";
+            $errors[] = "This song has already existed.";
         }
     }
 }
@@ -59,7 +57,7 @@ if (isset($_POST["create"])) {
 <?php if (!empty($errors)) { ?>
 <div class="alert alert-danger alert-dismissible">
     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-    <h5><i class="icon fas fa-ban"></i> Thông báo lỗi!</h5>
+    <h5><i class="icon fas fa-ban"></i> Error! </h5>
     <ul>
         <?php foreach ($errors as $error) { ?>
         <li><?php echo $error ?></li>
@@ -77,7 +75,7 @@ if (isset($_POST["create"])) {
             <div class="form-group">
                 <label>Category</label>
                 <select class="form-control" name="category_id">
-                    <?php recursiveOption ($parent_category,$_POST["category_id"],3) ?>
+                    <?php recursiveOption ($parent_category,$_POST["category_id"],0) ?>
                 </select>
             </div>
 
@@ -115,13 +113,13 @@ if (isset($_POST["create"])) {
 
             <div class="form-group">
                 <label>Song lyric</label>
-             <textarea class="form-control" name="content"><?php
+             <textarea class="form-control" name="song_lyric"><?php
                     if (isset($_POST["song_lyric"])) {
                         echo $_POST["song_lyric"];
                     }
                 ?></textarea>
                 <script>
-                    CKEDITOR.replace('content',{
+                    CKEDITOR.replace('song_lyric',{
                         filebrowserBrowseUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/ckfinder.html',
                         filebrowserUploadUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
                     });

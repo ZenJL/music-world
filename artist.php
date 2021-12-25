@@ -1,3 +1,12 @@
+<?php
+require_once "config.php";
+require_once "libs/connect.php";
+require_once "admin/model/auth.php";
+require_once "admin/model/song.php";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -158,11 +167,11 @@
 			<div class="header-inner">
 				<div class="tim-container clearfix">
 					<div id="site-logo" class="float-left">
-						<a href="index.html" class="logo-main">
+						<a href="index.php" class="logo-main">
 					<img src="public/image/logo.png" alt="logo">
 				</a>
 
-						<a href="index.html" class="logo-stickky">
+						<a href="index.php" class="logo-stickky">
 					<img src="public/image/logo-sticky.png" alt="logo">
 				</a>
 					</div>
@@ -171,7 +180,7 @@
 							<li class="menu-item-has-children active">
 								<a href="index.php">Home</a>
 <!--								<ul class="sub-menu">-->
-<!--									<li><a href="index.html">Home Player V1</a></li>-->
+<!--									<li><a href="index.php">Home Player V1</a></li>-->
 <!--									<li><a href="index-two.html">Home Player V2</a></li>-->
 <!--									<li><a href="index-three.html">Home Three</a></li>-->
 <!--									<li><a href="index-four.html">Home Magazine</a></li>-->
@@ -179,7 +188,7 @@
 <!--								</ul>-->
 							</li>
 							<li class="menu-item-has-children">
-								<a href="artist.php">Aritist</a>
+								<a href="artist.php">Artist</a>
 								<ul class="sub-menu">
 									<li><a href="artist.php">Artist</a></li>
 									<li><a href="artist-single.html">Artist Details</a></li>
@@ -243,7 +252,7 @@
 		<header id="mobile-nav-wrap">
 			<div class="mob-header-inner d-flex justify-content-between">
 				<div id="mobile-logo" class="d-flex justify-content-start">
-					<a href="index.html"><img src="public/image/logo.png" alt="Site Logo"></a>
+					<a href="index.php"><img src="public/image/logo.png" alt="Site Logo"></a>
 				</div>
 
 				<ul class="user-link nav justify-content-end">
@@ -269,7 +278,7 @@
 			<div class="mobile-nav-top-wrap">
 				<div class="mob-header-inner clearfix">
 					<div class="d-flex justify-content-start mobile-logo">
-						<a href="index.html">
+						<a href="index.php">
 					<img src="public/image/logo-dark.png" alt="Site Logo">
 				</a>
 					</div>
@@ -293,7 +302,7 @@
 					<li>
 						<a href="#0" class="dropdownlink">Home</a>
 						<ul class="submenuItems">
-							<li><a href="index.html">Home One</a></li>
+							<li><a href="index.php">Home One</a></li>
 							<li><a href="index-two.html">Home Two</a></li>
 							<li><a href="index-three.html">Home Three</a></li>
 							<li><a href="index-four.html">Home Four</a></li>
@@ -354,14 +363,13 @@
 		<section class="page-header" data-bg-image="public/media/background/7.jpg">
 			<div class="tim-container">
 				<div class="page-header-title text-center">
-					<h3>James Robinson</h3>
-					<h2>& Band BIOGRAPHY</h2>
+					<h2>ARTISTS</h2>
 				</div>
 
 				<div class="breadcrumbs">
 					<a href="#">Home</a>
 					<span>/</span>
-					<span>About Us</span>
+					<span>Artists</span>
 				</div>
 
 			</div>
@@ -373,174 +381,36 @@
 		<!--=        	About         =-->
 		<!--===========================-->
 
+
 		<section id="about-two" class="section-padding">
 			<div class="tim-container">
-				<div class="row no-gutters">
-					<div class="col-lg-6">
-						<div class="artist-about pr__30">
-							<h3 class="artist-name"><a href="artist-single.html">James Robinson</a></h3>
-							<h6>Genre : Guitarist/Singer</h6>
-							<span>Album: Rockstar, first rain, Love Song (More)</span>
-							<a href="album.html" class="tim-btn">View Portfolio</a>
+                <?php
+                $artists = get_all_artist($conn);
+                foreach($artists as $artist){
 
-							<div class="content">
-								<p>
-									There are many variations of passages of Lorem Ipsum available but the majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum,
-									you need believable.
-								</p>
-
-								<p>
-									Available but the majority suffered about the are Nalteration in some form by injected humoranomised words which don't look even slightly nothi believable.
-								</p>
-								<p>
-									The majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum, you need believable.
-								</p>
-							</div>
-							<!-- /.content -->
-
-							<h4 class="alb-title">Album & Single</h4>
-
-							<div class="alb-single">
-								<a href="#" class="single-items"><img src="public/media/about/6.jpg" alt="album"></a>
-								<a href="#" class="single-items"><img src="public/media/about/7.jpg" alt="album"></a>
-								<a href="#" class="single-items"><img src="public/media/about/8.jpg" alt="album"></a>
-								<a href="#" class="single-items"><img src="public/media/about/9.jpg" alt="album"></a>
-								<a href="#" class="single-items"><img src="public/media/about/10.jpg" alt="album"></a>
-							</div>
-							<!-- /.alb-single -->
-						</div>
-						<!-- /.artist-about -->
-					</div>
-					<!-- /.col-lg-6 -->
-
-					<div class="col-lg-6">
-						<div class="album-feature">
-							<img src="public/media/about/11.jpg" alt="Album">
-							<div class="artist-music-inner clearfix">
-								<div class="aritist-music">
-									<div class="icon">
-										<i class="tim-music-album"></i>
-									</div>
-
-									<div class="content">
-										<p>13</p>
-										<span>Album</span>
-									</div>
-								</div>
-
-								<div class="aritist-music clearfix">
-									<div class="icon">
-										<i class="tim-music-album-1"></i>
-									</div>
-
-									<div class="content">
-										<p>24</p>
-										<span>Single</span>
-									</div>
-								</div>
-
-								<div class="aritist-music clearfix">
-									<div class="icon">
-										<i class="tim-sound-frecuency"></i>
-									</div>
-
-									<div class="content">
-										<p>17</p>
-										<span>Concerts</span>
-									</div>
-								</div>
-
-								<div class="aritist-music clearfix">
-									<div class="icon">
-										<i class="tim-headphones"></i>
-									</div>
-
-									<div class="content">
-										<p>16</p>
-										<span>Tracks</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /.album-feature -->
-					</div>
-					<!-- /.col-lg-6 -->
-				</div>
-				<!-- /.row -->
-
+                ?>
 				<div class="row no-gutters">
 					<div class="col-lg-6">
 						<div class="album-feature">
 							<img src="public/media/about/12.jpg" alt="Album">
-							<div class="artist-music-inner clearfix">
-								<div class="aritist-music">
-									<div class="icon">
-										<i class="tim-music-album"></i>
-									</div>
-
-									<div class="content">
-										<p>13</p>
-										<span>Album</span>
-									</div>
-								</div>
-
-								<div class="aritist-music clearfix">
-									<div class="icon">
-										<i class="tim-music-album-1"></i>
-									</div>
-
-									<div class="content">
-										<p>24</p>
-										<span>Single</span>
-									</div>
-								</div>
-
-								<div class="aritist-music clearfix">
-									<div class="icon">
-										<i class="tim-sound-frecuency"></i>
-									</div>
-
-									<div class="content">
-										<p>17</p>
-										<span>Concerts</span>
-									</div>
-								</div>
-
-								<div class="aritist-music clearfix">
-									<div class="icon">
-										<i class="tim-headphones"></i>
-									</div>
-
-									<div class="content">
-										<p>16</p>
-										<span>Tracks</span>
-									</div>
-								</div>
-							</div>
 						</div>
 						<!-- /.album-feature -->
 					</div>
 					<!-- /.col-lg-6 -->
 					<div class="col-lg-6">
-						<div class="artist-about pl__30 pt_70">
-							<h3 class="artist-name"><a href="artist-single.html">Sezar Doue</a></h3>
-							<h6>Genre : Guitarist/Singer</h6>
-							<span>Album: Rockstar, first rain, Love Song (More)</span>
-							<a href="album.html" class="tim-btn">View Portfolio</a>
-
+						<div class="artist-about pl__30">
+							<h3 class="artist-name"><?php echo $artist["artist_name"];?> </h3>
+							<h6>Artist details</h6>
 							<div class="content">
 								<p>
-									There are many variations of passages of Lorem Ipsum available but the majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum,
-									you need believable.
-								</p>
-
-								<p>
-									Available but the majority suffered about the are Nalteration in some form by injected humoranomised words which don't look even slightly nothi believable.
-								</p>
-								<p>
-									The majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum, you need believable.
+									<?php echo $artist["artist_details"];?>
+                                <h6>Artist achievements</h6>
+                                <p>
+                                    <?php echo $artist["artist_achievements"];?>
+                                </p>
 								</p>
 							</div>
+
 							<!-- /.content -->
 
 							<h4 class="alb-title">Album & Single</h4>
@@ -557,12 +427,14 @@
 						<!-- /.artist-about -->
 					</div>
 					<!-- /.col-lg-6 -->
-				</div>
+				</div> <hr>
+                <?php } ?>
 				<!-- /.row -->
 			</div>
 			<!-- /.tim-container -->
 		</section>
 		<!-- /#about-two -->
+
 
 		<!--==================================-->
 		<!--=        	Watch Live         	 =-->
@@ -583,6 +455,8 @@
 		<!--====================================-->
 		<!--=        	Artist Profile         =-->
 		<!--====================================-->
+
+
 
 		<section id="artist-profile" class="section-padding">
 			<div class="tim-container">
@@ -647,62 +521,13 @@
 						<!-- /.artist-profile -->
 					</div>
 					<!-- /.col-lg-6 col-md-6 -->
-
-					<div class="col-xl-6 col-lg-12">
-
-						<div class="artist-profile artist-profile-details">
-							<div class="profoile-image">
-								<a href="artist-single.html"><img src="public/media/about/15.jpg" alt="profile"></a>
-
-								<ul class="artist-social-link">
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-								</ul>
-							</div>
-							<!-- /.profoile-image -->
-
-							<div class="content">
-								<h3><a href="artist-single.html">Robert Anderson</a></h3>
-								<h6>Genre : Lead Drummers</h6>
-								<span>Album: Rockstar, first rain, Love Song (More)</span>
-
-								<p>
-									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passag
-								</p>
-
-								<a href="artist-single.html" class="tim-btn">View Profile</a>
-							</div>
-							<!-- /.content -->
-
-							<div class="clearfix"></div>
-
-							<div class="recent-concert">
-								<h3 class="title">Recent Concert in USA 2018</h3>
-
-								<p>
-									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passages of Lorem Ipsum available but the majority.
-								</p>
-
-								<div class="video-inner">
-									<img src="public/media/about/16.jpg" alt="thumb">
-									<a href="https://www.youtube.com/watch?v=0I8GmbDU7c4" class="popup-video-btn"><i class="fa fa-play"></i></a>
-								</div>
-								<!-- /.video-inner -->
-							</div>
-						</div>
-						<!-- /.artist-profile -->
-
-					</div>
-					<!-- /.col-lg-6 col-md-6 -->
 				</div>
 				<!-- /.row -->
 			</div>
 			<!-- /.tim-container -->
 		</section>
 		<!-- /#artist-profile -->
+
 
 		<!--==============================-->
 		<!--=        	Footer         	 =-->
@@ -714,7 +539,7 @@
 					<div class="row">
 						<div class="col-xl-3 col-lg-6 col-sm-6">
 							<div class="footer-about">
-								<a href="index.html" class="footer-logo">
+								<a href="index.php" class="footer-logo">
 							<img src="public/image/logo.png" alt="Logo">
 						</a>
 
