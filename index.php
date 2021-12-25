@@ -182,9 +182,9 @@
 <!--                            </ul>-->
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="artist.html">Artist</a>
+                            <a href="artist.php">Artist</a>
                             <ul class="sub-menu">
-                                <li><a href="artist.html">Artist</a></li>
+                                <li><a href="artist.php">Artist</a></li>
                                 <li><a href="artist-single.html">Artist Details</a></li>
                             </ul>
                         </li>
@@ -304,7 +304,7 @@
                 <li>
                     <a href="#0" class="dropdownlink">Artist</a>
                     <ul class="submenuItems">
-                        <li><a href="artist.html">Artist</a></li>
+                        <li><a href="artist.php">Artist</a></li>
                         <li><a href="artist-single.html">Artist Details</a></li>
                     </ul>
                 </li>

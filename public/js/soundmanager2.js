@@ -151,7 +151,7 @@
       bufferTime: 3, // seconds of data to buffer before playback begins (null = flash default of 0.1 seconds - if AAC playback is gappy, try increasing.)
       serverURL: null, // rtmp: FMS or FMIS server to connect to, required when requesting media via RTMP or one of its variants
       onconnect: null, // rtmp: callback for connection to flash media server
-      duration: null // rtmp: song duration (msec)
+      duration: null // rtmp: product duration (msec)
 
     };
 
@@ -2050,7 +2050,7 @@
 
         /**
          * Streams will pause when their buffer is full if they are being loaded.
-         * In this case paused is true, but the song hasn't started playing yet.
+         * In this case paused is true, but the product hasn't started playing yet.
          * If we just call resume() the onplay() callback will never be called.
          * So only call resume() if the position is > 0.
          * Another reason is because options like volume won't have been applied yet.
@@ -3534,7 +3534,7 @@
 
         /**
          * internal: flash 9 + NetStream (MovieStar/RTMP-only) feature
-         * RTMP may include song title, MovieStar content may include encoding info
+         * RTMP may include product title, MovieStar content may include encoding info
          *
          * @param {array} oMDProps (names)
          * @param {array} oMDData (values)
@@ -3561,7 +3561,7 @@
 
         /**
          * internal: flash 8 + flash 9 ID3 feature
-         * may include artist, song title etc.
+         * may include artist, product title etc.
          *
          * @param {array} oID3Props (names)
          * @param {array} oID3Data (values)

@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from themeim.com/demo/milando/album.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Dec 2021 02:51:29 GMT -->
+<!-- Mirrored from themeim.com/demo/milando/artist.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Dec 2021 02:51:03 GMT -->
 <head>
 	<!-- Meta Data -->
 	<meta charset="utf-8">
@@ -84,7 +84,7 @@
 
 					<ul class="user-login float-right">
 						<li><a href="#">Sing Up</a></li>
-						<li><a href="admin/login.php">Sign In</a></li>
+						<li><a href="#">Sign In</a></li>
 						<li class="cart-count">
 							<a href="#">
 						<i class="fa fa-shopping-bag"></i>
@@ -158,20 +158,20 @@
 			<div class="header-inner">
 				<div class="tim-container clearfix">
 					<div id="site-logo" class="float-left">
-						<a href="index.php" class="logo-main">
+						<a href="index.html" class="logo-main">
 					<img src="public/image/logo.png" alt="logo">
 				</a>
 
-						<a href="index.php" class="logo-stickky">
+						<a href="index.html" class="logo-stickky">
 					<img src="public/image/logo-sticky.png" alt="logo">
 				</a>
 					</div>
 					<div class="nav float-right">
 						<ul id="main-header-menu">
-							<li class="menu-item-has-children">
+							<li class="menu-item-has-children active">
 								<a href="index.php">Home</a>
 <!--								<ul class="sub-menu">-->
-<!--									<li><a href="index.php">Home Player V1</a></li>-->
+<!--									<li><a href="index.html">Home Player V1</a></li>-->
 <!--									<li><a href="index-two.html">Home Player V2</a></li>-->
 <!--									<li><a href="index-three.html">Home Three</a></li>-->
 <!--									<li><a href="index-four.html">Home Magazine</a></li>-->
@@ -179,18 +179,18 @@
 <!--								</ul>-->
 							</li>
 							<li class="menu-item-has-children">
-								<a href="artist.php">Artist</a>
+								<a href="artist.php">Aritist</a>
 								<ul class="sub-menu">
 									<li><a href="artist.php">Artist</a></li>
 									<li><a href="artist-single.html">Artist Details</a></li>
 								</ul>
 							</li>
-							<li class="menu-item-has-children active">
-								<a href="album.php">Album</a>
-<!--								<ul class="sub-menu">-->
-<!--									<li><a href="album.php">Album</a></li>-->
-<!--									<li><a href="album-single.html">Album Details</a></li>-->
-<!--								</ul>-->
+							<li class="menu-item-has-children">
+								<a href="album.html">Album</a>
+								<ul class="sub-menu">
+									<li><a href="album.html">Album</a></li>
+									<li><a href="album-single.html">Album Details</a></li>
+								</ul>
 							</li>
 							<li class="menu-item-has-children">
 								<a href="event.html">Events</a>
@@ -243,7 +243,7 @@
 		<header id="mobile-nav-wrap">
 			<div class="mob-header-inner d-flex justify-content-between">
 				<div id="mobile-logo" class="d-flex justify-content-start">
-					<a href="index.php"><img src="public/image/logo.png" alt="Site Logo"></a>
+					<a href="index.html"><img src="public/image/logo.png" alt="Site Logo"></a>
 				</div>
 
 				<ul class="user-link nav justify-content-end">
@@ -269,7 +269,7 @@
 			<div class="mobile-nav-top-wrap">
 				<div class="mob-header-inner clearfix">
 					<div class="d-flex justify-content-start mobile-logo">
-						<a href="index.php">
+						<a href="index.html">
 					<img src="public/image/logo-dark.png" alt="Site Logo">
 				</a>
 					</div>
@@ -293,7 +293,7 @@
 					<li>
 						<a href="#0" class="dropdownlink">Home</a>
 						<ul class="submenuItems">
-							<li><a href="index.php">Home One</a></li>
+							<li><a href="index.html">Home One</a></li>
 							<li><a href="index-two.html">Home Two</a></li>
 							<li><a href="index-three.html">Home Three</a></li>
 							<li><a href="index-four.html">Home Four</a></li>
@@ -307,7 +307,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="album.php">Album</a>
+						<a href="album.html">Album</a>
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Events</a>
@@ -351,16 +351,17 @@
 		<!--=        	Banner         =-->
 		<!--============================-->
 
-		<section class="page-header" data-bg-image="public/media/background/8.jpg">
+		<section class="page-header" data-bg-image="public/media/background/7.jpg">
 			<div class="tim-container">
 				<div class="page-header-title text-center">
-					<h2>Album</h2>
+					<h3>James Robinson</h3>
+					<h2>& Band BIOGRAPHY</h2>
 				</div>
 
 				<div class="breadcrumbs">
-					<a href="index.php">Home</a>
+					<a href="#">Home</a>
 					<span>/</span>
-					<span>Album</span>
+					<span>About Us</span>
 				</div>
 
 			</div>
@@ -372,252 +373,336 @@
 		<!--=        	About         =-->
 		<!--===========================-->
 
-		<section id="album">
-			<div class="tim-container d-flex justify-content-center">
-				<div class="col-xl-12">
-
-					<ul class="tim-isotope-filter album-filter-button">
-						<li>
-							<a href="#" data-filter=".pop">Pop</a>
-						</li>
-						<li>
-							<a href="#" data-filter=".classical">R&B</a>
-						</li>
-						<li>
-							<a href="#" data-filter=".jazz">Jazz</a>
-						</li>
-						<li>
-							<a href="#" data-filter=".rock">Rock</a>
-						</li>
-						<li>
-							<a href="#" data-filter=".rap">Rap</a>
-						</li>
-					</ul>
-
-					<div class="tim-isotope tim-isotope-1 wow fadeInUp" data-wow-delay="0.8s">
-						<ul class="tim-filter-items tim-album-items grid">
-							<li class="grid-sizer"></li>
-							<li class="tim-album-item grid-item rock rap jazz">
-								<div class="tim-isotope-grid__img effect-active">
-									<img src="public/media/album/1.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item rock classical">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/2.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item rap">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/3.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item classical rock">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/4.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item classical rock">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/5.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item classical">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/6.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item jazz">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/7.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-							<li class="tim-album-item grid-item jazz rap">
-								<div class="tim-isotope-grid__img">
-									<img src="public/media/album/8.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- /.tim-container -->
-		</section>
-		<!-- /#album -->
-
-		<!--=================================-->
-		<!--=        	Intro Video         =-->
-		<!--=================================-->
-
-		<section id="video-intro" data-bg-image="public/media/background/4.jpg">
+		<section id="about-two" class="section-padding">
 			<div class="tim-container">
-				<div class="intro-video">
-					<a href="https://www.youtube.com/watch?v=0I8GmbDU7c4" class="video-btn popup-video-btn"><i class="fa fa-play"></i></a>
-					<h2>NEW VIDEOS TODAY</h2>
-					<h5>Your heart is just a beatbox for the song of your life!</h5>
-					<p>FULL ALBUM RELEASE</p>
-					<p>On 24 Dec 2017</p>
-				</div>
-				<!-- /.intro-video -->
-			</div>
-			<!-- /.tim-container -->
-		</section>
-		<!-- /#video-intro -->
+				<div class="row no-gutters">
+					<div class="col-lg-6">
+						<div class="artist-about pr__30">
+							<h3 class="artist-name"><a href="artist-single.html">James Robinson</a></h3>
+							<h6>Genre : Guitarist/Singer</h6>
+							<span>Album: Rockstar, first rain, Love Song (More)</span>
+							<a href="album.html" class="tim-btn">View Portfolio</a>
 
-		<!--===================================-->
-		<!--=        	Featured Album        =-->
-		<!--===================================-->
+							<div class="content">
+								<p>
+									There are many variations of passages of Lorem Ipsum available but the majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum,
+									you need believable.
+								</p>
 
-		<section id="feature-album">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2>Featured<span>Album</span></h2>
-					<p>
-						There are many variations of passages of Lorem Ipsum available but the majority have suffered<br> alteration in some injected humour.
-					</p>
-				</div>
-
-				<div class="feature-albums">
-					<div class="row">
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="tim-album-item">
-								<div class="tim-feature-image">
-									<img src="public/media/album/1.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn">Buy Now</a>
-									</div>
-								</div>
+								<p>
+									Available but the majority suffered about the are Nalteration in some form by injected humoranomised words which don't look even slightly nothi believable.
+								</p>
+								<p>
+									The majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum, you need believable.
+								</p>
 							</div>
-						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
+							<!-- /.content -->
 
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="tim-album-item">
-								<div class="tim-feature-image">
-									<img src="public/media/album/2.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn">Buy Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
+							<h4 class="alb-title">Album & Single</h4>
 
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="tim-album-item">
-								<div class="tim-feature-image">
-									<img src="public/media/album/3.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn">Buy Now</a>
-									</div>
-								</div>
+							<div class="alb-single">
+								<a href="#" class="single-items"><img src="public/media/about/6.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/7.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/8.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/9.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/10.jpg" alt="album"></a>
 							</div>
+							<!-- /.alb-single -->
 						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
-
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="tim-album-item">
-								<div class="tim-feature-image">
-									<img src="public/media/album/4.jpg" alt="album thumb" />
-								</div>
-								<div class="album_details_wrap">
-									<div class="album-info">
-										<a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
-										<h4 class="album-title">By The Way Rain</h4>
-										<h5 class="artist-name">Song Artist Name</h5>
-										<a href="#" class="tim-btn">Buy Now</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
+						<!-- /.artist-about -->
 					</div>
-					<!-- /.row -->
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6">
+						<div class="album-feature">
+							<img src="public/media/about/11.jpg" alt="Album">
+							<div class="artist-music-inner clearfix">
+								<div class="aritist-music">
+									<div class="icon">
+										<i class="tim-music-album"></i>
+									</div>
+
+									<div class="content">
+										<p>13</p>
+										<span>Album</span>
+									</div>
+								</div>
+
+								<div class="aritist-music clearfix">
+									<div class="icon">
+										<i class="tim-music-album-1"></i>
+									</div>
+
+									<div class="content">
+										<p>24</p>
+										<span>Single</span>
+									</div>
+								</div>
+
+								<div class="aritist-music clearfix">
+									<div class="icon">
+										<i class="tim-sound-frecuency"></i>
+									</div>
+
+									<div class="content">
+										<p>17</p>
+										<span>Concerts</span>
+									</div>
+								</div>
+
+								<div class="aritist-music clearfix">
+									<div class="icon">
+										<i class="tim-headphones"></i>
+									</div>
+
+									<div class="content">
+										<p>16</p>
+										<span>Tracks</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.album-feature -->
+					</div>
+					<!-- /.col-lg-6 -->
 				</div>
-				<!-- /.feature-albums -->
+				<!-- /.row -->
+
+				<div class="row no-gutters">
+					<div class="col-lg-6">
+						<div class="album-feature">
+							<img src="public/media/about/12.jpg" alt="Album">
+							<div class="artist-music-inner clearfix">
+								<div class="aritist-music">
+									<div class="icon">
+										<i class="tim-music-album"></i>
+									</div>
+
+									<div class="content">
+										<p>13</p>
+										<span>Album</span>
+									</div>
+								</div>
+
+								<div class="aritist-music clearfix">
+									<div class="icon">
+										<i class="tim-music-album-1"></i>
+									</div>
+
+									<div class="content">
+										<p>24</p>
+										<span>Single</span>
+									</div>
+								</div>
+
+								<div class="aritist-music clearfix">
+									<div class="icon">
+										<i class="tim-sound-frecuency"></i>
+									</div>
+
+									<div class="content">
+										<p>17</p>
+										<span>Concerts</span>
+									</div>
+								</div>
+
+								<div class="aritist-music clearfix">
+									<div class="icon">
+										<i class="tim-headphones"></i>
+									</div>
+
+									<div class="content">
+										<p>16</p>
+										<span>Tracks</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /.album-feature -->
+					</div>
+					<!-- /.col-lg-6 -->
+					<div class="col-lg-6">
+						<div class="artist-about pl__30 pt_70">
+							<h3 class="artist-name"><a href="artist-single.html">Sezar Doue</a></h3>
+							<h6>Genre : Guitarist/Singer</h6>
+							<span>Album: Rockstar, first rain, Love Song (More)</span>
+							<a href="album.html" class="tim-btn">View Portfolio</a>
+
+							<div class="content">
+								<p>
+									There are many variations of passages of Lorem Ipsum available but the majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum,
+									you need believable.
+								</p>
+
+								<p>
+									Available but the majority suffered about the are Nalteration in some form by injected humoranomised words which don't look even slightly nothi believable.
+								</p>
+								<p>
+									The majority suffered aboaNalteration in some form by injected humour or randomised words which don't look even slightly nothi belieable. If you are going to use a passage of Lorem Ipsum, you need believable.
+								</p>
+							</div>
+							<!-- /.content -->
+
+							<h4 class="alb-title">Album & Single</h4>
+
+							<div class="alb-single">
+								<a href="#" class="single-items"><img src="public/media/about/6.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/7.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/8.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/9.jpg" alt="album"></a>
+								<a href="#" class="single-items"><img src="public/media/about/10.jpg" alt="album"></a>
+							</div>
+							<!-- /.alb-single -->
+						</div>
+						<!-- /.artist-about -->
+					</div>
+					<!-- /.col-lg-6 -->
+				</div>
+				<!-- /.row -->
 			</div>
 			<!-- /.tim-container -->
 		</section>
-		<!-- /#feature-album -->
+		<!-- /#about-two -->
+
+		<!--==================================-->
+		<!--=        	Watch Live         	 =-->
+		<!--==================================-->
+
+		<section id="watch" data-bg-image="public/media/background/18.jpg">
+			<div class="tim-container">
+				<div class="watch-inner text-center">
+					<a href="#" class="tim-btn">Watch Live</a>
+					<a href="#" class="tim-btn tim-btn-bg">View Portfolio</a>
+				</div>
+				<!-- /.watch-inner -->
+			</div>
+			<!-- /.tim-container -->
+		</section>
+		<!-- /#watch -->
+
+		<!--====================================-->
+		<!--=        	Artist Profile         =-->
+		<!--====================================-->
+
+		<section id="artist-profile" class="section-padding">
+			<div class="tim-container">
+				<div class="row">
+					<div class="col-xl-6 col-lg-12">
+						<div class="artist-profile">
+							<div class="profoile-image">
+								<a href="artist-single.html"><img src="public/media/about/13.jpg" alt="profile"></a>
+
+								<ul class="artist-social-link">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+							<!-- /.profoile-image -->
+
+							<div class="content">
+								<h3><a href="artist-single.html">Robert Anderson</a></h3>
+								<h6>Genre : Lead Drummers</h6>
+								<span>Album: Rockstar, first rain, Love Song (More)</span>
+
+								<p>
+									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passag
+								</p>
+
+								<a href="artist-single.html" class="tim-btn">View Profile</a>
+							</div>
+							<!-- /.content -->
+						</div>
+						<!-- /.artist-profile -->
+
+						<div class="artist-profile">
+							<div class="profoile-image">
+								<a href="artist-single.html"><img src="public/media/about/14.jpg" alt="profile"></a>
+
+								<ul class="artist-social-link">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+							<!-- /.profoile-image -->
+
+							<div class="content">
+								<h3><a href="artist-single.html">Robert Anderson</a></h3>
+								<h6>Genre : Lead Drummers</h6>
+								<span>Album: Rockstar, first rain, Love Song (More)</span>
+
+								<p>
+									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passag
+								</p>
+
+								<a href="artist-single.html" class="tim-btn">View Profile</a>
+							</div>
+							<!-- /.content -->
+						</div>
+						<!-- /.artist-profile -->
+					</div>
+					<!-- /.col-lg-6 col-md-6 -->
+
+					<div class="col-xl-6 col-lg-12">
+
+						<div class="artist-profile artist-profile-details">
+							<div class="profoile-image">
+								<a href="artist-single.html"><img src="public/media/about/15.jpg" alt="profile"></a>
+
+								<ul class="artist-social-link">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								</ul>
+							</div>
+							<!-- /.profoile-image -->
+
+							<div class="content">
+								<h3><a href="artist-single.html">Robert Anderson</a></h3>
+								<h6>Genre : Lead Drummers</h6>
+								<span>Album: Rockstar, first rain, Love Song (More)</span>
+
+								<p>
+									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passag
+								</p>
+
+								<a href="artist-single.html" class="tim-btn">View Profile</a>
+							</div>
+							<!-- /.content -->
+
+							<div class="clearfix"></div>
+
+							<div class="recent-concert">
+								<h3 class="title">Recent Concert in USA 2018</h3>
+
+								<p>
+									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passages of Lorem Ipsum available but the majority.
+								</p>
+
+								<div class="video-inner">
+									<img src="public/media/about/16.jpg" alt="thumb">
+									<a href="https://www.youtube.com/watch?v=0I8GmbDU7c4" class="popup-video-btn"><i class="fa fa-play"></i></a>
+								</div>
+								<!-- /.video-inner -->
+							</div>
+						</div>
+						<!-- /.artist-profile -->
+
+					</div>
+					<!-- /.col-lg-6 col-md-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.tim-container -->
+		</section>
+		<!-- /#artist-profile -->
 
 		<!--==============================-->
 		<!--=        	Footer         	 =-->
@@ -629,7 +714,7 @@
 					<div class="row">
 						<div class="col-xl-3 col-lg-6 col-sm-6">
 							<div class="footer-about">
-								<a href="index.php" class="footer-logo">
+								<a href="index.html" class="footer-logo">
 							<img src="public/image/logo.png" alt="Logo">
 						</a>
 
@@ -862,8 +947,7 @@
 	<script src="public/js/smoke.js"></script>
 	<script src="public/dependencies/FitText.js/js/jquery.fittext.js"></script>
 	<script src="public/dependencies/gmap3/js/gmap3.min.js"></script>
-<!--	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>-->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
 	<script src='public/dependencies/tilt.js/js/tilt.jquery.js'></script>
 	<script src='public/js/parallax.min.js'></script>
 	<!-- Player -->
@@ -884,5 +968,5 @@
 </body>
 
 
-<!-- Mirrored from themeim.com/demo/milando/album.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Dec 2021 02:51:31 GMT -->
+<!-- Mirrored from themeim.com/demo/milando/artist.php by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Dec 2021 02:51:08 GMT -->
 </html>
