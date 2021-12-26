@@ -97,11 +97,11 @@
 
                         <ul class="custom-content cart-overview">
                             <li class="cart-item clearfix">
-                                <a href="single-product.html" class="product-thumbnail">
+                                <a href="single-product.php" class="product-thumbnail">
                                     <img src="public/media/product/9.jpg" alt="">
                                 </a>
                                 <div class="product-details">
-                                    <a href="single-product.html" class="product-title">Drums & Percussion</a>
+                                    <a href="single-product.php" class="product-title">Drums & Percussion</a>
                                     <span class="product-quantity">1 x</span>
                                     <span class="product-price">
 									<span class="currency">$</span> 300
@@ -110,11 +110,11 @@
                                 </div>
                             </li>
                             <li class="cart-item clearfix">
-                                <a href="single-product.html" class="product-thumbnail">
+                                <a href="single-product.php" class="product-thumbnail">
                                     <img src="public/media/product/10.jpg" alt="">
                                 </a>
                                 <div class="product-details">
-                                    <a href="single-product.html" class="product-title">Rocking Guitar</a>
+                                    <a href="single-product.php" class="product-title">Rocking Guitar</a>
                                     <span class="product-quantity">2 x</span>
                                     <span class="product-price">
 									<span class="currency">$</span> 250
@@ -125,11 +125,11 @@
                                 </div>
                             </li>
                             <li class="cart-item clearfix">
-                                <a href="single-product.html" class="product-thumbnail">
+                                <a href="single-product.php" class="product-thumbnail">
                                     <img src="public/media/product/11.jpg" alt="">
                                 </a>
                                 <div class="product-details">
-                                    <a href="single-product.html" class="product-title">Exclusive Headphones</a>
+                                    <a href="single-product.php" class="product-title">Exclusive Headphones</a>
                                     <span class="product-quantity">3 x</span>
                                     <span class="product-price">
 									<span class="currency">$</span> 550
@@ -144,8 +144,8 @@
 									</span>
                             </li>
                             <li class="cart-actions">
-                                <a href="cart.html" class="view-cart">View Cart</a>
-                                <a href="checkout.html" class="checkout button pill small">
+                                <a href="cart.php" class="view-cart">View Cart</a>
+                                <a href="checkout.php" class="checkout button pill small">
                                     <span class="icon-check"></span>
                                     Checkout
                                 </a>
@@ -175,17 +175,17 @@
                             <a href="index.php">Home</a>
 <!--                            <ul class="sub-menu">-->
 <!--                                <li><a href="index.php">Home Player V1</a></li>-->
-<!--                                <li><a href="index-two.html">Home Player V2</a></li>-->
-<!--                                <li><a href="index-three.html">Home Three</a></li>-->
-<!--                                <li><a href="index-four.html">Home Magazine</a></li>-->
-<!--                                <li><a href="index-five.html">Home Five</a></li>-->
+<!--                                <li><a href="index-two.php">Home Player V2</a></li>-->
+<!--                                <li><a href="index-three.php">Home Three</a></li>-->
+<!--                                <li><a href="index-four.php">Home Magazine</a></li>-->
+<!--                                <li><a href="index-five.php">Home Five</a></li>-->
 <!--                            </ul>-->
                         </li>
                         <li class="menu-item-has-children">
                             <a href="artist.php">Artist</a>
                             <ul class="sub-menu">
                                 <li><a href="artist.php">Artist</a></li>
-                                <li><a href="artist-single.html">Artist Details</a></li>
+                                <li><a href="artist-single.php">Artist Details</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
@@ -199,38 +199,38 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="event.html">Events</a>
+                            <a href="event.php">Events</a>
                             <ul class="sub-menu">
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="tabs.html">Tabs</a>
+                            <a href="tabs.php">Tabs</a>
                             <ul class="sub-menu">
-                                <li><a href="tabs.html">Tabs</a></li>
-                                <li><a href="tabs-single.html">Tabs Details</a></li>
+                                <li><a href="tabs.php">Tabs</a></li>
+                                <li><a href="tabs-single.php">Tabs Details</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="blog-list-right.html">Blog</a>
+                            <a href="blog-list-right.php">Blog</a>
                             <ul class="sub-menu">
-                                <li><a href="blog-list-right.html">Blog Standard</a></li>
-                                <li><a href="blog-grid-right.html">Blog Grid</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
+                                <li><a href="blog-list-right.php">Blog Standard</a></li>
+                                <li><a href="blog-grid-right.php">Blog Grid</a></li>
+                                <li><a href="blog-single.php">Blog Single</a></li>
 
                             </ul>
                         </li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li class="menu-item-has-children">
-                            <a href="shop-right.html">Shop</a>
+                            <a href="shop-right.php">Shop</a>
                             <ul class="sub-menu">
-                                <li><a href="shop-right.html">Shop Right</a></li>
-                                <li><a href="shop-left.html">Shop Left</a></li>
-                                <li><a href="shop-single.html">Shop Details</a></li>
+                                <li><a href="shop-right.php">Shop Right</a></li>
+                                <li><a href="shop-left.php">Shop Left</a></li>
+                                <li><a href="shop-single.php">Shop Details</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <a href="shop-left.html" class="head-btn">Music Store</a>
+                    <a href="shop-left.php" class="head-btn">Music Store</a>
                 </div>
                 <!-- /.nav -->
             </div>
@@ -297,18 +297,12 @@
             <ul class="accordion-menu">
                 <li>
                     <a href="index.php" class="dropdownlink">Home</a>
-<!--                    <ul class="submenuItems">-->
-<!--                        <li><a href="index.php">Home One</a></li>-->
-<!--                        <li><a href="index-two.html">Home Two</a></li>-->
-<!--                        <li><a href="index-three.html">Home Three</a></li>-->
-<!--                        <li><a href="index-four.html">Home Four</a></li>-->
-<!--                    </ul>-->
                 </li>
                 <li>
                     <a href="#0" class="dropdownlink">Artist</a>
                     <ul class="submenuItems">
                         <li><a href="artist.php">Artist</a></li>
-                        <li><a href="artist-single.html">Artist Details</a></li>
+                        <li><a href="artist-single.php">Artist Details</a></li>
                     </ul>
                 </li>
                 <li>
@@ -317,32 +311,32 @@
                 <li>
                     <a href="#0" class="dropdownlink">Events</a>
                     <ul class="submenuItems">
-                        <li><a href="event.html">Events</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="event.php">Events</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="tabs.html">Tabs</a>
+                    <a href="tabs.php">Tabs</a>
 
                 </li>
                 <li>
                     <a href="#0" class="dropdownlink">Blog</a>
                     <ul class="submenuItems">
-                        <li><a href="blog-list-right.html">Blog Standard</a></li>
-                        <li><a href="blog-grid-right.html">Blog Grid</a></li>
-                        <li><a href="blog-single.html">Blog Single</a></li>
+                        <li><a href="blog-list-right.php">Blog Standard</a></li>
+                        <li><a href="blog-grid-right.php">Blog Grid</a></li>
+                        <li><a href="blog-single.php">Blog Single</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="gallery.html">Gallery</a>
+                    <a href="gallery.php">Gallery</a>
                 </li>
                 <li>
                     <a href="#0" class="dropdownlink">Shop</a>
                     <ul class="submenuItems">
-                        <li><a href="shop-right.html">Shop Right</a></li>
-                        <li><a href="shop-left.html">Shop Left</a></li>
-                        <li><a href="shop-single.html">Shop Details</a></li>
+                        <li><a href="shop-right.php">Shop Right</a></li>
+                        <li><a href="shop-left.php">Shop Left</a></li>
+                        <li><a href="shop-single.php">Shop Details</a></li>
                     </ul>
                 </li>
             </ul>
@@ -919,7 +913,7 @@
                 <ul class="products product-two tim-product-view swiper-wrapper">
                     <li class="product product-two clearfix swiper-slide">
                         <div class="product-thumb">
-                            <a href="shop-single.html"><img src="public/media/product/1.jpg" class="attachment-shop_catalog" alt="Product"></a>
+                            <a href="shop-single.php"><img src="public/media/product/1.jpg" class="attachment-shop_catalog" alt="Product"></a>
                             <span class="new">New!</span>
 
                             <div class="product-details">
@@ -957,7 +951,7 @@
 
                     <li class="product product-two clearfix swiper-slide">
                         <div class="product-thumb">
-                            <a href="shop-single.html"><img src="public/media/product/2.jpg" class="attachment-shop_catalog" alt="Product"></a>
+                            <a href="shop-single.php"><img src="public/media/product/2.jpg" class="attachment-shop_catalog" alt="Product"></a>
 
                             <div class="product-details">
                                 <a href="javascript:void(0);" class="btn-quickview trigger"><i class="tim-view"></i></a>
@@ -967,7 +961,7 @@
                         </div>
                         <div class="product-details-content">
                             <h2 class="woocommerce-loop-product__title">
-                                <a href="shop-single.html">Drums & Percussion</a>
+                                <a href="shop-single.php">Drums & Percussion</a>
                             </h2>
 
                             <span class="price">
@@ -993,7 +987,7 @@
 
                     <li class="product product-two clearfix swiper-slide">
                         <div class="product-thumb">
-                            <a href="shop-single.html"><img src="public/media/product/3.jpg" class="attachment-shop_catalog" alt="Product"></a>
+                            <a href="shop-single.php"><img src="public/media/product/3.jpg" class="attachment-shop_catalog" alt="Product"></a>
 
                             <div class="product-details">
                                 <a href="javascript:void(0);" class="btn-quickview trigger"><i class="tim-view"></i></a>
@@ -1003,7 +997,7 @@
                         </div>
                         <div class="product-details-content">
                             <h2 class="woocommerce-loop-product__title">
-                                <a href="shop-single.html">Exclusive Headphones</a>
+                                <a href="shop-single.php">Exclusive Headphones</a>
                             </h2>
 
                             <span class="price">
@@ -1029,7 +1023,7 @@
 
                     <li class="product product-two clearfix swiper-slide">
                         <div class="product-thumb">
-                            <a href="shop-single.html"><img src="public/media/product/4.jpg" class="attachment-shop_catalog" alt="Product"></a>
+                            <a href="shop-single.php"><img src="public/media/product/4.jpg" class="attachment-shop_catalog" alt="Product"></a>
                             <span class="new sale">Sale!</span>
                             <div class="product-details">
                                 <a href="javascript:void(0);" class="btn-quickview trigger"><i class="tim-view"></i></a>
@@ -1039,7 +1033,7 @@
                         </div>
                         <div class="product-details-content">
                             <h2 class="woocommerce-loop-product__title">
-                                <a href="shop-single.html">Acoustic Guitar</a>
+                                <a href="shop-single.php">Acoustic Guitar</a>
                             </h2>
 
                             <span class="price">
@@ -1318,7 +1312,7 @@
                     <article class="blog-post-grid">
 
                         <div class="feature-image">
-                            <a href="blog-single.html">
+                            <a href="blog-single.php">
                                 <img src="public/media/blog/1.jpg" alt="thumb">
                             </a>
                         </div>
@@ -1326,7 +1320,7 @@
                         <div class="entry-content">
 
                             <header class="entry-header">
-                                <h2 class="alpha entry-title"><a href="blog-single.html">Fusion make you happy.</a></h2>
+                                <h2 class="alpha entry-title"><a href="blog-single.php">Fusion make you happy.</a></h2>
                             </header>
                             <!-- .entry-header -->
 
@@ -1334,7 +1328,7 @@
                                 There are many variations of passages of Lorem Ipsum available, but te maity the have suffered alterat.
                             </p>
 
-                            <a href="blog-single.html" class="read-btn">Read More</a>
+                            <a href="blog-single.php" class="read-btn">Read More</a>
                         </div>
                         <!-- .entry-content -->
                         <aside class="entry-meta">
@@ -1355,7 +1349,7 @@
                     <article class="blog-post-grid">
 
                         <div class="feature-image">
-                            <a href="blog-single.html">
+                            <a href="blog-single.php">
                                 <img src="public/media/blog/2.jpg" alt="thumb">
                             </a>
                         </div>
@@ -1364,7 +1358,7 @@
                         <div class="entry-content">
 
                             <header class="entry-header">
-                                <h2 class="alpha entry-title"><a href="blog-single.html">Makes you rythem of life.</a></h2>
+                                <h2 class="alpha entry-title"><a href="blog-single.php">Makes you rythem of life.</a></h2>
                             </header>
                             <!-- .entry-header -->
 
@@ -1372,7 +1366,7 @@
                                 There are many variations of passages of Lorem Ipsum available, but te maity the have suffered alterat.
                             </p>
 
-                            <a href="blog-single.html" class="read-btn">Read More</a>
+                            <a href="blog-single.php" class="read-btn">Read More</a>
                         </div>
                         <!-- .entry-content -->
                         <aside class="entry-meta">
@@ -1393,7 +1387,7 @@
                     <article class="blog-post-grid">
 
                         <div class="feature-image">
-                            <a href="blog-single.html">
+                            <a href="blog-single.php">
                                 <img src="public/media/blog/3.jpg" alt="thumb">
                             </a>
                         </div>
@@ -1401,7 +1395,7 @@
                         <div class="entry-content">
 
                             <header class="entry-header">
-                                <h2 class="alpha entry-title"><a href="blog-single.html">Rockee Make the Rock.</a></h2>
+                                <h2 class="alpha entry-title"><a href="blog-single.php">Rockee Make the Rock.</a></h2>
                             </header>
                             <!-- .entry-header -->
 
@@ -1409,7 +1403,7 @@
                                 There are many variations of passages of Lorem Ipsum available, but te maity the have suffered alterat.
                             </p>
 
-                            <a href="blog-single.html" class="read-btn">Read More</a>
+                            <a href="blog-single.php" class="read-btn">Read More</a>
                         </div>
                         <!-- .entry-content -->
                         <aside class="entry-meta">
@@ -1438,7 +1432,7 @@
                         <div class="entry-content">
 
                             <header class="entry-header">
-                                <h2 class="alpha entry-title"><a href="blog-single.html">Makes you rythem of life.</a></h2>
+                                <h2 class="alpha entry-title"><a href="blog-single.php">Makes you rythem of life.</a></h2>
                             </header>
                             <!-- .entry-header -->
 
@@ -1446,7 +1440,7 @@
                                 There are many variations of passages of Lorem Ipsum available, but te maity the have suffered alterat.
                             </p>
 
-                            <a href="blog-single.html" class="read-btn">Read More</a>
+                            <a href="blog-single.php" class="read-btn">Read More</a>
                         </div>
                         <!-- .entry-content -->
                         <aside class="entry-meta">

@@ -103,11 +103,11 @@ require_once "admin/model/song.php";
 
 							<ul class="custom-content cart-overview">
 								<li class="cart-item clearfix">
-									<a href="single-product.html" class="product-thumbnail">
+									<a href="single-product.php" class="product-thumbnail">
 								<img src="public/media/product/9.jpg" alt="">
 							</a>
 									<div class="product-details">
-										<a href="single-product.html" class="product-title">Drums & Percussion</a>
+										<a href="single-product.php" class="product-title">Drums & Percussion</a>
 										<span class="product-quantity">1 x</span>
 										<span class="product-price">
 									<span class="currency">$</span> 300
@@ -116,11 +116,11 @@ require_once "admin/model/song.php";
 									</div>
 								</li>
 								<li class="cart-item clearfix">
-									<a href="single-product.html" class="product-thumbnail">
+									<a href="single-product.php" class="product-thumbnail">
 								<img src="public/media/product/10.jpg" alt="">
 							</a>
 									<div class="product-details">
-										<a href="single-product.html" class="product-title">Rocking Guitar</a>
+										<a href="single-product.php" class="product-title">Rocking Guitar</a>
 										<span class="product-quantity">2 x</span>
 										<span class="product-price">
 									<span class="currency">$</span> 250
@@ -131,11 +131,11 @@ require_once "admin/model/song.php";
 									</div>
 								</li>
 								<li class="cart-item clearfix">
-									<a href="single-product.html" class="product-thumbnail">
+									<a href="single-product.php" class="product-thumbnail">
 								<img src="public/media/product/11.jpg" alt="">
 							</a>
 									<div class="product-details">
-										<a href="single-product.html" class="product-title">Exclusive Headphones</a>
+										<a href="single-product.php" class="product-title">Exclusive Headphones</a>
 										<span class="product-quantity">3 x</span>
 										<span class="product-price">
 									<span class="currency">$</span> 550
@@ -150,8 +150,8 @@ require_once "admin/model/song.php";
 									</span>
 								</li>
 								<li class="cart-actions">
-									<a href="cart.html" class="view-cart">View Cart</a>
-									<a href="checkout.html" class="checkout button pill small">
+									<a href="cart.php" class="view-cart">View Cart</a>
+									<a href="checkout.php" class="checkout button pill small">
 								<span class="icon-check"></span>
 								Checkout
 							</a>
@@ -179,61 +179,54 @@ require_once "admin/model/song.php";
 						<ul id="main-header-menu">
 							<li class="menu-item-has-children active">
 								<a href="index.php">Home</a>
-<!--								<ul class="sub-menu">-->
-<!--									<li><a href="index.php">Home Player V1</a></li>-->
-<!--									<li><a href="index-two.html">Home Player V2</a></li>-->
-<!--									<li><a href="index-three.html">Home Three</a></li>-->
-<!--									<li><a href="index-four.html">Home Magazine</a></li>-->
-<!--									<li><a href="index-five.html">Home Five</a></li>-->
-<!--								</ul>-->
 							</li>
 							<li class="menu-item-has-children">
 								<a href="artist.php">Artist</a>
 								<ul class="sub-menu">
 									<li><a href="artist.php">Artist</a></li>
-									<li><a href="artist-single.html">Artist Details</a></li>
+									<li><a href="artist-single.php">Artist Details</a></li>
 								</ul>
 							</li>
 							<li class="menu-item-has-children">
-								<a href="album.html">Album</a>
+								<a href="album.php">Album</a>
 								<ul class="sub-menu">
-									<li><a href="album.html">Album</a></li>
-									<li><a href="album-single.html">Album Details</a></li>
+									<li><a href="album.php">Album</a></li>
+									<li><a href="album-single.php">Album Details</a></li>
 								</ul>
 							</li>
 							<li class="menu-item-has-children">
-								<a href="event.html">Events</a>
+								<a href="event.php">Events</a>
 								<ul class="sub-menu">
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="contact.php">Contact</a></li>
 								</ul>
 							</li>
 							<li class="menu-item-has-children">
-								<a href="tabs.html">Tabs</a>
+								<a href="tabs.php">Tabs</a>
 								<ul class="sub-menu">
-									<li><a href="tabs.html">Tabs</a></li>
-									<li><a href="tabs-single.html">Tabs Details</a></li>
+									<li><a href="tabs.php">Tabs</a></li>
+									<li><a href="tabs-single.php">Tabs Details</a></li>
 								</ul>
 							</li>
 							<li class="menu-item-has-children">
-								<a href="blog-list-right.html">Blog</a>
+								<a href="blog-list-right.php">Blog</a>
 								<ul class="sub-menu">
-									<li><a href="blog-list-right.html">Blog Standard</a></li>
-									<li><a href="blog-grid-right.html">Blog Grid</a></li>
-									<li><a href="blog-single.html">Blog Single</a></li>
+									<li><a href="blog-list-right.php">Blog Standard</a></li>
+									<li><a href="blog-grid-right.php">Blog Grid</a></li>
+									<li><a href="blog-single.php">Blog Single</a></li>
 
 								</ul>
 							</li>
-							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="gallery.php">Gallery</a></li>
 							<li class="menu-item-has-children">
-								<a href="shop-right.html">Shop</a>
+								<a href="shop-right.php">Shop</a>
 								<ul class="sub-menu">
-									<li><a href="shop-right.html">Shop Right</a></li>
-									<li><a href="shop-left.html">Shop Left</a></li>
-									<li><a href="shop-single.html">Shop Details</a></li>
+									<li><a href="shop-right.php">Shop Right</a></li>
+									<li><a href="shop-left.php">Shop Left</a></li>
+									<li><a href="shop-single.php">Shop Details</a></li>
 								</ul>
 							</li>
 						</ul>
-						<a href="shop-left.html" class="head-btn">Music Store</a>
+						<a href="shop-left.php" class="head-btn">Music Store</a>
 					</div>
 					<!-- /.nav -->
 				</div>
@@ -303,50 +296,50 @@ require_once "admin/model/song.php";
 						<a href="#0" class="dropdownlink">Home</a>
 						<ul class="submenuItems">
 							<li><a href="index.php">Home One</a></li>
-							<li><a href="index-two.html">Home Two</a></li>
-							<li><a href="index-three.html">Home Three</a></li>
-							<li><a href="index-four.html">Home Four</a></li>
+							<li><a href="index-two.php">Home Two</a></li>
+							<li><a href="index-three.php">Home Three</a></li>
+							<li><a href="index-four.php">Home Four</a></li>
 						</ul>
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Artist</a>
 						<ul class="submenuItems">
 							<li><a href="artist.php">Artist</a></li>
-							<li><a href="artist-single.html">Artist Details</a></li>
+							<li><a href="artist-single.php">Artist Details</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="album.html">Album</a>
+						<a href="album.php">Album</a>
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Events</a>
 						<ul class="submenuItems">
-							<li><a href="event.html">Events</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
+							<li><a href="event.php">Events</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
 						</ul>
 					</li>
 					<li>
-						<a href="tabs.html">Tabs</a>
+						<a href="tabs.php">Tabs</a>
 
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Blog</a>
 						<ul class="submenuItems">
-							<li><a href="blog-list-right.html">Blog Standard</a></li>
-							<li><a href="blog-grid-right.html">Blog Grid</a></li>
-							<li><a href="blog-single.html">Blog Single</a></li>
+							<li><a href="blog-list-right.php">Blog Standard</a></li>
+							<li><a href="blog-grid-right.php">Blog Grid</a></li>
+							<li><a href="blog-single.php">Blog Single</a></li>
 						</ul>
 					</li>
 
 					<li>
-						<a href="gallery.html">Gallery</a>
+						<a href="gallery.php">Gallery</a>
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Shop</a>
 						<ul class="submenuItems">
-							<li><a href="shop-right.html">Shop Right</a></li>
-							<li><a href="shop-left.html">Shop Left</a></li>
-							<li><a href="shop-single.html">Shop Details</a></li>
+							<li><a href="shop-right.php">Shop Right</a></li>
+							<li><a href="shop-left.php">Shop Left</a></li>
+							<li><a href="shop-single.php">Shop Details</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -464,7 +457,7 @@ require_once "admin/model/song.php";
 					<div class="col-xl-6 col-lg-12">
 						<div class="artist-profile">
 							<div class="profoile-image">
-								<a href="artist-single.html"><img src="public/media/about/13.jpg" alt="profile"></a>
+								<a href="artist-single.php"><img src="public/media/about/13.jpg" alt="profile"></a>
 
 								<ul class="artist-social-link">
 									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -477,7 +470,7 @@ require_once "admin/model/song.php";
 							<!-- /.profoile-image -->
 
 							<div class="content">
-								<h3><a href="artist-single.html">Robert Anderson</a></h3>
+								<h3><a href="artist-single.php">Robert Anderson</a></h3>
 								<h6>Genre : Lead Drummers</h6>
 								<span>Album: Rockstar, first rain, Love Song (More)</span>
 
@@ -485,7 +478,7 @@ require_once "admin/model/song.php";
 									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passag
 								</p>
 
-								<a href="artist-single.html" class="tim-btn">View Profile</a>
+								<a href="artist-single.php" class="tim-btn">View Profile</a>
 							</div>
 							<!-- /.content -->
 						</div>
@@ -493,7 +486,7 @@ require_once "admin/model/song.php";
 
 						<div class="artist-profile">
 							<div class="profoile-image">
-								<a href="artist-single.html"><img src="public/media/about/14.jpg" alt="profile"></a>
+								<a href="artist-single.php"><img src="public/media/about/14.jpg" alt="profile"></a>
 
 								<ul class="artist-social-link">
 									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -506,7 +499,7 @@ require_once "admin/model/song.php";
 							<!-- /.profoile-image -->
 
 							<div class="content">
-								<h3><a href="artist-single.html">Robert Anderson</a></h3>
+								<h3><a href="artist-single.php">Robert Anderson</a></h3>
 								<h6>Genre : Lead Drummers</h6>
 								<span>Album: Rockstar, first rain, Love Song (More)</span>
 
@@ -514,7 +507,7 @@ require_once "admin/model/song.php";
 									There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in abo some injected humour. There are many variations of the passag
 								</p>
 
-								<a href="artist-single.html" class="tim-btn">View Profile</a>
+								<a href="artist-single.php" class="tim-btn">View Profile</a>
 							</div>
 							<!-- /.content -->
 						</div>
@@ -772,8 +765,10 @@ require_once "admin/model/song.php";
 	<script src="public/js/smoke.js"></script>
 	<script src="public/dependencies/FitText.js/js/jquery.fittext.js"></script>
 	<script src="public/dependencies/gmap3/js/gmap3.min.js"></script>
-	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-	<script src='public/dependencies/tilt.js/js/tilt.jquery.js'></script>
+<!--	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+
+    <script src='public/dependencies/tilt.js/js/tilt.jquery.js'></script>
 	<script src='public/js/parallax.min.js'></script>
 	<!-- Player -->
 	<script src="public/dependencies/jPlayer/js/jquery.jplayer.min.js"></script>
