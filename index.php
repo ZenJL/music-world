@@ -190,10 +190,13 @@
                         </li>
                         <li class="menu-item-has-children">
                             <a href="album.php">Album</a>
-<!--                            <ul class="sub-menu">-->
-<!--                                <li><a href="album.php">Album</a></li>-->
-<!--                                <li><a href="album-single.html">Album Details</a></li>-->
-<!--                            </ul>-->
+                            <ul class="sub-menu">
+                                <li><a href="album.php">Jazz</a></li>
+                                <li><a href="album.php">R&B</a></li>
+                                <li><a href="album.php">Rock</a></li>
+                                <li><a href="album.php">Pop</a></li>
+                                <li><a href="album.php">Classical</a></li>
+                            </ul>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="event.html">Events</a>

@@ -38,7 +38,6 @@
                     <td><?php echo $song["song_date"] ?></td>
                     <td><?php echo $cats[$song["category_id"]-1]["name"] ?></td>
                     <td><?php echo $song["song_download_count"] ?></td>
-
                     <td><a onClick="return checkDelete('Delete this song?')" href="index.php?module=song&action=delete&id=<?php echo $song["id_song"] ?>">Delete</a></td>
                     <td><a href="index.php?module=song&action=edit&id=<?php echo $song["id"] ?>">Edit</a></td>
                 </tr>
