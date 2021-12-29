@@ -168,29 +168,26 @@
 					</div>
 					<div class="nav float-right">
 						<ul id="main-header-menu">
-							<li class="menu-item-has-children active">
+							<li class="menu-item-has-children">
 								<a href="index.php">Home</a>
 
 							</li>
 							<li class="menu-item-has-children">
-								<a href="artist.php">Aritist</a>
-								<ul class="sub-menu">
-									<li><a href="artist.php">Artist</a></li>
-									<li><a href="artist-single.php">Artist Details</a></li>
-								</ul>
+								<a href="artist.php">Artist</a>
 							</li>
 							<li class="menu-item-has-children">
 								<a href="album.php">Album</a>
-								<ul class="sub-menu">
-									<li><a href="album.php">Album</a></li>
-									<li><a href="album-single.php">Album Details</a></li>
-								</ul>
+                                <ul class="sub-menu">
+                                    <li><a href="album.php">Jazz</a></li>
+                                    <li><a href="album.php">R&B</a></li>
+                                    <li><a href="album.php">Rock</a></li>
+                                    <li><a href="album.php">Pop</a></li>
+                                    <li><a href="album.php">Classical</a></li>
+                                </ul>
+
 							</li>
-							<li class="menu-item-has-children">
+							<li class="menu-item-has-children active">
 								<a href="event.php">Events</a>
-								<ul class="sub-menu">
-									<li><a href="contact.php">Contact</a></li>
-								</ul>
 							</li>
 							<li class="menu-item-has-children">
 								<a href="tabs.php">Tabs</a>
@@ -295,20 +292,14 @@
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Artist</a>
-						<ul class="submenuItems">
-							<li><a href="artist.php">Artist</a></li>
-							<li><a href="artist-single.php">Artist Details</a></li>
-						</ul>
+
 					</li>
 					<li>
 						<a href="album.php">Album</a>
 					</li>
 					<li>
 						<a href="#0" class="dropdownlink">Events</a>
-						<ul class="submenuItems">
-							<li><a href="event.php">Events</a></li>
-							<li><a href="contact.php">Contact Us</a></li>
-						</ul>
+
 					</li>
 					<li>
 						<a href="tabs.php">Tabs</a>
@@ -608,468 +599,34 @@
 		</section>
 		<!-- /#recent-performance -->
 
-		<!--=======================================-->
-		<!--=        	Recent Performance        =-->
-		<!--=======================================-->
+        <!--==============================-->
+        <!--=        	Footer         	 =-->
+        <!--==============================-->
 
-		<section id="pricing">
-			<div class="container con-pd">
-				<div class="section-title text-center">
-					<h2>Amazing<span> Price</span></h2>
-					<p>
-						There are many variations of passages of Lorem Ipsum available but the majority have suffered<br> alteration in some injected humour.
-					</p>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-table">
+        <footer id="footer">
 
-							<svg version="1.1" class="pricbg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 361 135" style="enable-background:new 0 0 361 135;" xml:space="preserve">
-						<style type="text/css">
-						.st0{fill:#E33A89;}
-						</style>
-						<path id="XMLID_21_" class="st0" d="M305.1,0h-4.4c0.2,1,0.2,1.5,0.2,2.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.9,0.1-1.4,0.2-2.4h-3.9c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5
-						c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5
-						c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4H56v2c0,0-4,54.7-56,63.4V135h361V65.6C314,59.8,305.7,5,305.1,0z"
-						/>
-					</svg>
-
-
-							<div class="pricing-head">
-								<h2 class="price-title">Deposist Seat</h2>
-							</div>
-							<div class="price-inner">
-								<h3 class="price">$160</h3>
-
-								<ul class="price-feature">
-									<li>Many Fun Ready</li>
-									<li>Free Soft Drinks More</li>
-									<li>Free Fast Music More</li>
-									<li> Medium Couple Seat</li>
-									<li>More Service That</li>
-								</ul>
-							</div>
-
-							<a href="#" class="tim-btn">Buy Ticket</a>
-
-
-							<svg version="1.1" class="pricebg pricbg-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 361 135" style="enable-background:new 0 0 361 135;" xml:space="preserve">
-
-						<path id="XMLID_212_" class="st0" d="M305.1,135h-4.4c0.2-1,0.2-1.5,0.2-2.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.9,0.1,1.4,0.2,2.4h-3.9c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5
-						c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5
-						c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4H56v-2c0,0-4-54.7-56-63.4V0h361v69.4
-						C314,75.2,305.7,130,305.1,135z"/>
-					</svg>
-						</div>
-						<!-- /.pricing-table -->
-					</div>
-					<!-- /.col-lg-4 col-md-6 -->
-
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-table">
-
-							<svg version="1.1" class="pricbg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 361 135" style="enable-background:new 0 0 361 135;" xml:space="preserve">
-						<style type="text/css">
-						.st0{fill:#E33A89;}
-						</style>
-						<path id="XMLID_22_" class="st0" d="M305.1,0h-4.4c0.2,1,0.2,1.5,0.2,2.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.9,0.1-1.4,0.2-2.4h-3.9c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5
-						c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5
-						c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4H56v2c0,0-4,54.7-56,63.4V135h361V65.6C314,59.8,305.7,5,305.1,0z"
-						/>
-					</svg>
-
-
-							<div class="pricing-head">
-								<h2 class="price-title">Standard Seat</h2>
-							</div>
-							<div class="price-inner">
-								<h3 class="price">$190</h3>
-
-								<ul class="price-feature">
-									<li>Many Fun Ready</li>
-									<li>Free Soft Drinks More</li>
-									<li>Free Fast Music More</li>
-									<li> Medium Couple Seat</li>
-									<li>More Service That</li>
-								</ul>
-							</div>
-
-							<a href="#" class="tim-btn">Buy Ticket</a>
-
-
-							<svg version="1.1" class="pricebg pricbg-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 361 135" style="enable-background:new 0 0 361 135;" xml:space="preserve">
-
-						<path id="XMLID_222_" class="st0" d="M305.1,135h-4.4c0.2-1,0.2-1.5,0.2-2.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.9,0.1,1.4,0.2,2.4h-3.9c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5
-						c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5
-						c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4H56v-2c0,0-4-54.7-56-63.4V0h361v69.4
-						C314,75.2,305.7,130,305.1,135z"/>
-					</svg>
-						</div>
-						<!-- /.pricing-table -->
-					</div>
-					<!-- /.col-lg-4 col-md-6 -->
-
-					<div class="col-lg-4 col-md-6">
-						<div class="pricing-table">
-
-							<svg version="1.1" class="pricbg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 361 135" style="enable-background:new 0 0 361 135;" xml:space="preserve">
-						<style type="text/css">
-						.st0{fill:#E33A89;}
-						</style>
-						<path id="XMLID_20_" class="st0" d="M305.1,0h-4.4c0.2,1,0.2,1.5,0.2,2.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.9,0.1-1.4,0.2-2.4h-3.9c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5
-						c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5
-						c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5
-						c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-3.8
-						c0.1,0,0.1,0.9,0.1,1.4c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4h-4.8c0.1,0,0.1,0.9,0.1,1.4
-						c0,5.3-3,9.5-6.7,9.5c-3.7,0-6.7-4.2-6.7-9.5c0-0.5,0-1.4,0.1-1.4H56v2c0,0-4,54.7-56,63.4V135h361V65.6C314,59.8,305.7,5,305.1,0z"
-						/>
-					</svg>
-
-
-							<div class="pricing-head">
-								<h2 class="price-title">Vip Seat</h2>
-							</div>
-							<div class="price-inner">
-								<h3 class="price">$230</h3>
-
-								<ul class="price-feature">
-									<li>Many Fun Ready</li>
-									<li>Free Soft Drinks More</li>
-									<li>Free Fast Music More</li>
-									<li> Medium Couple Seat</li>
-									<li>More Service That</li>
-								</ul>
-							</div>
-
-							<a href="#" class="tim-btn">Buy Ticket</a>
-
-
-							<svg version="1.1" class="pricebg pricbg-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 361 135" style="enable-background:new 0 0 361 135;" xml:space="preserve">
-
-						<path id="XMLID_202_" class="st0" d="M305.1,135h-4.4c0.2-1,0.2-1.5,0.2-2.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.9,0.1,1.4,0.2,2.4h-3.9c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5
-						c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5
-						c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5
-						c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-3.8
-						c0.1,0,0.1-0.9,0.1-1.4c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4h-4.8c0.1,0,0.1-0.9,0.1-1.4
-						c0-5.3-3-9.5-6.7-9.5c-3.7,0-6.7,4.2-6.7,9.5c0,0.5,0,1.4,0.1,1.4H56v-2c0,0-4-54.7-56-63.4V0h361v69.4
-						C314,75.2,305.7,130,305.1,135z"/>
-					</svg>
-						</div>
-						<!-- /.pricing-table -->
-					</div>
-					<!-- /.col-lg-4 col-md-6 -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /#pricing -->
-
-		<!--===============================-->
-		<!--=        	Newsletter        =-->
-		<!--===============================-->
-
-		<section id="newsletter">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 col-md-6">
-						<div class="newsletter">
-							<h2>Sign Up for Newsletter</h2>
-							<h4>We’ll be with you on every walk of life on how to identify new opportunities.</h4>
-						</div>
-						<!-- /.newsletter -->
-					</div>
-					<!-- /.col-md-7 -->
-
-					<div class="col-lg-5 col-md-6">
-						<div class="newsletter-inner">
-							<form action="https://themeim.com/demo/milando/php/subscribe.php" method="post" class="newsletter-form" data-deventform="newsletter-subscribe">
-								<input type="email" name="email" class="form-control" id="newsletter-form-email" placeholder="Enter your E-mail" required>
-								<button type="submit" name="submit" id="newsletter-submit" class="btn tim-btn">
-							<span>Subscribe</span>
-							<i class="fa fa-circle-o-notch fa-spin"></i>
-						</button>
-								<div class="clearfix"></div>
-								<div class="form-result alert">
-									<div class="content"></div>
-								</div>
-								<!-- /.form-result-->
-							</form>
-							<!-- /.newsletter-form -->
-						</div>
-						<!-- /.newsletter-inner -->
-					</div>
-					<!-- /.col-md-5 -->
-				</div>
-				<!-- /.row -->
-			</div>
-			<!-- /.container -->
-		</section>
-		<!-- /#newsletter -->
-
-		<!--==============================-->
-		<!--=        	Footer         	 =-->
-		<!--==============================-->
-
-		<footer id="footer">
-			<div class="tim-container">
-				<div class="footer-inner">
-					<div class="row">
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="footer-about">
-								<a href="index.php" class="footer-logo">
-							<img src="public/image/logo.png" alt="Logo">
-						</a>
-
-								<p>
-									There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words slightly believable.There are many. There are many variations of passages of Lorem.
-								</p>
-
-								<div class="footer-contact">
-									<div class="contact-details clearfix">
-										<i class="fa fa-map-marker"></i>
-										<p>
-											22 No. Street New York, West beas park.<br> New York, USA
-										</p>
-									</div>
-
-									<div class="contact-details clearfix">
-										<i class="fa fa-phone"></i>
-										<p>
-											Booking Call: +01 245 815 8246
-										</p>
-									</div>
-
-									<div class="contact-details clearfix">
-										<i class="fa fa-envelope"></i>
-										<p>
-											info@yourdomain.com
-										</p>
-									</div>
-								</div>
-								<!-- /.footer-address -->
-							</div>
-							<!-- /.footer-about -->
-						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
-
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="footer-blog-inner">
-								<h3 class="footer-title">Our Latest Post</h3>
-								<div class="footer-blog">
-
-									<div class="widget-latest-post">
-										<a href="#" class="fea-image">
-									<img src="public/media/blog/f1.jpg" alt="Thumb">
-								</a>
-
-										<div class="content">
-											<h3><a href="#">Musicial Audio Songs doit amet<br> concateur un</a> </h3>
-											<a href="#" class="meta">Feb 15,2018</a>
-										</div>
-
-									</div>
-									<!-- /.widget-latest-post -->
-								</div>
-								<!-- /.footer-blog -->
-
-								<div class="footer-blog">
-
-									<div class="widget-latest-post">
-										<a href="#" class="fea-image">
-									<img src="public/media/blog/f2.jpg" alt="Thumb">
-									<i class="fa fa-play-circle"></i>
-								</a>
-
-										<div class="content">
-											<h3><a href="#">Musicial Audio Songs doit amet<br> concateur un</a> </h3>
-											<a href="#" class="meta">Feb 15,2018</a>
-										</div>
-
-									</div>
-									<!-- /.widget-latest-post -->
-								</div>
-								<!-- /.footer-blog -->
-
-								<div class="footer-blog">
-
-									<div class="widget-latest-post">
-										<a href="#" class="fea-image">
-									<img src="public/media/blog/f3.jpg" alt="Thumb">
-								</a>
-
-										<div class="content">
-											<h3><a href="#">Musicial Audio Songs doit amet<br> concateur un</a> </h3>
-											<a href="#" class="meta">Feb 15,2018</a>
-										</div>
-
-									</div>
-									<!-- /.widget-latest-post -->
-								</div>
-								<!-- /.footer-blog -->
-							</div>
-							<!-- /.footer-blog-inner -->
-						</div>
-						<!-- /.col-xs-3 -->
-
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="footer-tags">
-								<h3 class="footer-title">Our Latest Post</h3>
-								<div class="tagcloud">
-									<a href="#">Rockstar</a>
-									<a href="#">Creative</a>
-									<a href="#">Design</a>
-									<a href="#">Responsive</a>
-									<a href="#">Max Studio</a>
-									<a href="#">Life</a>
-								</div>
-								<!-- /.tagcloud -->
-							</div>
-							<!-- /.footer-tags -->
-
-							<div class="footer-newsletter">
-								<h3 class="footer-title">Join our newsletter.</h3>
-
-								<p>
-									Some form, by injected humour, or randoised words slightly believablere are many .
-								</p>
-
-								<form action="#" id="widget-newsletter">
-									<input type="text" placeholder="Enter Your Email">
-									<button type="submit" class="submit"><i class="fa fa-paper-plane-o"></i></button>
-								</form>
-							</div>
-							<!-- /.footer-newsletter -->
-						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
-
-						<div class="col-xl-3 col-lg-6 col-sm-6">
-							<div class="widget-instagram">
-								<h3 class="footer-title">Instagram Image</h3>
-
-								<div class="instagram-feed">
-									<a href="#">
-								<img src="public/media/instagram/1.jpg" alt="thumb">
-							</a>
-									<a href="#">
-								<img src="public/media/instagram/2.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/3.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/4.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/5.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/6.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/7.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/8.jpg" alt="thumb">
-							</a>
-
-									<a href="#">
-								<img src="public/media/instagram/9.jpg" alt="thumb">
-							</a>
-
-								</div>
-							</div>
-							<!-- /.widget-instagram -->
-						</div>
-						<!-- /.col-xl-3 col-lg-4 col-sm-6 -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.footer-inner -->
-			</div>
-			<!-- /.tim-container -->
-			<ul class="footer-social-link">
-				<li class="fb-bg"><a href="#">Facebook</a></li>
-				<li class="yotube-bg"><a href="#">Youtube</a></li>
-				<li class="tw-bg"><a href="#">Twitter</a></li>
-				<li class="pin-bg"><a href="#">Pinterest</a></li>
-			</ul>
-			<div class="copyright-text">
-				<div class="tim-container">
-					<div class="row">
-						<div class="col-sm-7 col-md-6">
-							<p>Copyright © 2018, <a href="http://www.themeim.com/">Music Studio</a>. All Right Reserved</p>
-						</div>
-						<!-- /.col-md-6 -->
-						<div class="col-sm-5 col-md-6">
-							<div class="design-author text-right">
-								<p>Designed by <a href="http://www.themeim.com/">ThemeIM</a></p>
-							</div>
-							<!-- /.design-author -->
-						</div>
-						<!-- /.col-md-6 -->
-					</div>
-					<!-- /.row -->
-				</div>
-				<!-- /.tim-container -->
-			</div>
-			<!-- /.copyright-text -->
-		</footer>
-		<!-- /#footer -->
+            <div class="copyright-text">
+                <div class="tim-container">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-6">
+                            <p>Copyright © 2018, <a href="http://www.themeim.com/">Music Studio</a>. All Right Reserved</p>
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-sm-5 col-md-6">
+                            <div class="design-author text-right">
+                                <p>Designed by <a href="http://www.themeim.com/">ThemeIM</a></p>
+                            </div>
+                            <!-- /.design-author -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.tim-container -->
+            </div>
+            <!-- /.copyright-text -->
+        </footer>
+        <!-- /#footer -->
 
 		<div class="backtotop">
 			<i class="fa fa-angle-up backtotop_btn"></i>
