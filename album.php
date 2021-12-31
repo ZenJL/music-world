@@ -174,16 +174,16 @@
 							<li class="menu-item-has-children">
 								<a href="artist.php">Artist</a>
 							</li>
-							<li class="menu-item-has-children active">
-								<a href="album.php">Album</a>
-						    <ul class="sub-menu">
-                                <li><a href="album.php" data-filter=".jazz">Jazz</a></li>
-                                <li><a href="album.php" data-filter=".r&b">R&B</a></li>
-                                <li><a href="album.php" data-filter=".rock">Rock</a></li>
-                                <li><a href="album.php" data-filter=".pop">Pop</a></li>
-                                <li><a href="album.php" data-filter=".classical">Classical</a></li>
-                            </ul>
-							</li>
+                            <li class="menu-item-has-children active">
+                                <a href="album.php" data-filter=".design">Album</a>
+                                <ul class="sub-menu">
+                                    <li><a href="jazz.php">Jazz</a></li>
+                                    <li><a href="rnb.php">R&B</a></li>
+                                    <li><a href="rock.php">Rock</a></li>
+                                    <li><a href="pop.php">Pop</a></li>
+                                    <li><a href="classical.php">Classical</a></li>
+                                </ul>
+                            </li>
 							<li class="menu-item-has-children">
 								<a href="event.php">Events</a>
 

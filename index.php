@@ -186,13 +186,13 @@
 
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="album.php">Album</a>
+                            <a href="album.php" data-filter=".design">Album</a>
                             <ul class="sub-menu">
-                                <li><a href="album.php">Jazz</a></li>
-                                <li><a href="album.php">R&B</a></li>
-                                <li><a href="album.php">Rock</a></li>
-                                <li><a href="album.php">Pop</a></li>
-                                <li><a href="album.php">Classical</a></li>
+                                <li><a href="jazz.php">Jazz</a></li>
+                                <li><a href="rnb.php">R&B</a></li>
+                                <li><a href="rock.php">Rock</a></li>
+                                <li><a href="pop.php">Pop</a></li>
+                                <li><a href="classical.php">Classical</a></li>
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
@@ -297,7 +297,7 @@
 
                 </li>
                 <li>
-                    <a href="album.php">Album</a>
+                    <a href="album.php" data-filter=".branding">AAlbum</a>
                 </li>
                 <li>
                     <a href="#0" class="dropdownlink">Events</a>
