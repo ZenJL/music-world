@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="public/index3.html" class="brand-link">
+    <a href="index.php" class="brand-link">
         <img src="public/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8;" />
         <span class="brand-text font-weight-light">Music World</span>
     </a>
@@ -34,9 +34,26 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>Dashboard</p>
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            Member
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="index.php?module=user&action=index" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List-member</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?module=user&action=create" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add-member</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -61,6 +78,54 @@
                         </li>
                     </ul>
                 </li>
+
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-archive"></i>
+                        <p>
+                            Artist
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="index.php?module=artist&action=index" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List artists</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?module=artist&action=create" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add artist</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-archive"></i>
+                        <p>
+                            Album
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="index.php?module=album&action=index" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List album</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?module=album&action=create" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add album</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-archive"></i>
@@ -80,52 +145,6 @@
                             <a href="index.php?module=song&action=create" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Songs</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Member
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="index.php?module=user&action=index" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>List-member</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.php?module=user&action=create" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Add-member</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-cart-plus"></i>
-                        <p>
-                            Artist
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="index.php?module=artist&action=index" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>List artists</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.php?module=artist&action=index" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Add artist</p>
                             </a>
                         </li>
                     </ul>

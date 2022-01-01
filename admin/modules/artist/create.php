@@ -9,7 +9,7 @@ if (isset($_POST["create"])) {
         $errors[] = "Enter artist name";
     }
 
-    if (empty($_POST["category"])) {
+    if (empty($_POST["category_id"])) {
         $errors[] = "Please enter artist category";
     }
 

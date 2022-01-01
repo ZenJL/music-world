@@ -5,20 +5,20 @@ $parent_category = get_all_category ($conn);
 
 if (isset($_POST["create"])) {
 
-    if (empty($_POST["song_name"])) {
-        $errors[] = "Enter song name";
+    if (empty($_POST["album_name"])) {
+        $errors[] = "Enter album name";
     }
 
     if (empty($_POST["category_id"])) {
-        $errors[] = "Please enter song category";
+        $errors[] = "Please select album category";
     }
 
-    if (empty($_POST["song_lyric"])) {
-        $errors[] = "Please enter song lyric";
+    if (empty($_POST["album_date"])) {
+        $errors[] = "Please enter album release date";
     }
 
-    if (empty($_POST["id_album"])) {
-        $errors[] = "Please enter album id";
+    if (empty($_POST["id_artist"])) {
+        $errors[] = "Please select artist";
     }
 
     if (empty($_FILES["image"]["name"])) {
@@ -33,22 +33,21 @@ if (isset($_POST["create"])) {
         $file = changeNameFile($_FILES["image"]["name"]);
 
         $data = array(
-            'song_name' => $_POST["song_name"],
+            'album_name' => $_POST["album_name"],
+            'album_date' => $_POST["album_date"],
             'id_artist' => $_POST["id_artist"],
-            'song_lyric' => $_POST["song_lyric"],
-            'id_album' => $_POST["id_album"],
             'image' => $file,
             "category_id" => $_POST["category_id"]
         );
 
-        if (check_song_exist ($conn,$data)) {
-            create_song ($conn,$data);
+        if (check_album_exist ($conn,$data)) {
+            create_album ($conn,$data);
             move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
 
-            header("location:index.php?module=song");
+            header("location:index.php?module=album");
             exit();
         } else {
-            $errors[] = "This song has already existed.";
+            $errors[] = "This album has already existed.";
         }
     }
 }
@@ -69,7 +68,7 @@ if (isset($_POST["create"])) {
 <form method="POST" action="" enctype="multipart/form-data">
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Add song</h3>
+            <h3 class="card-title">Add album</h3>
         </div>
         <div class="card-body">
             <div class="form-group">
@@ -80,11 +79,11 @@ if (isset($_POST["create"])) {
             </div>
 
             <div class="form-group">
-                <label>Song name</label>
-                <input type="text" name="song_name" class="form-control" placeholder="Enter song name"
+                <label>Album name</label>
+                <input type="text" name="album_name" class="form-control" placeholder="Enter album name"
                     <?php 
-                        if (isset($_POST["song_name"])) {
-                            echo 'value="'.$_POST["song_name"].'"';
+                        if (isset($_POST["album_name"])) {
+                            echo 'value="'.$_POST["album_name"].'"';
                         }
                     ?>
                 >
@@ -92,7 +91,7 @@ if (isset($_POST["create"])) {
 
             <div class="form-group">
                 <label>Artist</label> <br>
-<!--                <input type="text" name="id_artist" class="form-control" placeholder="Enter song's artist">-->
+<!--                <input type="text" name="id_artist" class="form-control" placeholder="Enter album's artist">-->
                 <select class="form-control" name="id_artist">
                     <?php
                     $artists = get_all_artist($conn);
@@ -105,35 +104,11 @@ if (isset($_POST["create"])) {
                 </select>
             </div>
 
-            <div class="form-group">
-                <label>Album</label> <br>
-                <!--                <input type="text" name="id_artist" class="form-control" placeholder="Enter song's artist">-->
-                <select class="form-control" name="id_album">
-                    <?php
-                    $albums = get_all_album($conn);
-                    foreach($albums as $album){
-                        ?>
-                        <option value="<?php echo $album["id_album"] ?>" >
-                            <?php echo $album["album_name"]?>
-                        </option>
-                    <?php } ?>
-                </select>
+            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                <label>Album release date (YYYY-MM-DD)</label>
+                <input placeholder="2021-12-31" type="text" id="example" name="album_date" class="form-control">
             </div>
 
-            <div class="form-group">
-                <label>Song lyric</label>
-             <textarea class="form-control" name="song_lyric"><?php
-                    if (isset($_POST["song_lyric"])) {
-                        echo $_POST["song_lyric"];
-                    }
-                ?></textarea>
-                <script>
-                    CKEDITOR.replace('song_lyric',{
-                        filebrowserBrowseUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/ckfinder.html',
-                        filebrowserUploadUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                    });
-                </script>
-            </div>
 
             <div class="form-group">
                 <label>Image</label>

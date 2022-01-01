@@ -11,27 +11,27 @@
     <title>Home — Milando - Music Portal HTML Templat</title>
 
     <!-- Fav Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="public/image/fav-icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/image/fav-icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/image/fav-icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../public/image/fav-icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/image/fav-icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/image/fav-icons/favicon-16x16.png">
     <meta name="theme-color" content="#e43a90">
 
     <!-- Dependency Styles -->
-    <link rel="stylesheet" href="public/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/intro/css/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/swiper/swiper.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/wow/css/animate.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/magnific-popup/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/jquery-ui/css/jquery-ui.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/slick-carousel/css/slick.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/colornip/css/colornip.min.css" type="text/css">
-    <link rel="stylesheet" href="public/dependencies/css-loader/css/css-loader.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/intro/css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/swiper/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/wow/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/magnific-popup/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/jquery-ui/css/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/slick-carousel/css/slick.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/colornip/css/colornip.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/dependencies/css-loader/css/css-loader.css" type="text/css">
 
     <!-- Site Stylesheet -->
-    <link rel="stylesheet" href="public/css/woocommerce.css" type="text/css">
-    <link rel="stylesheet" href="public/css/app.css" type="text/css">
-    <link id="theme" rel="stylesheet" href="public/css/theme-color/theme-default.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/woocommerce.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/app.css" type="text/css">
+    <link id="theme" rel="stylesheet" href="../public/css/theme-color/theme-default.css" type="text/css">
 
 
 
@@ -84,7 +84,7 @@
 
                 <ul class="user-login float-right">
                     <li><a href="#">Sing Up</a></li>
-                    <li><a href="admin/login.php">Sign In</a></li>
+                    <li><a href="../admin/login.php">Sign In</a></li>
                     <li class="cart-count">
                         <a href="#">
                             <i class="fa fa-shopping-bag"></i>
@@ -95,7 +95,7 @@
                         <ul class="custom-content cart-overview">
                             <li class="cart-item clearfix">
                                 <a href="single-product.php" class="product-thumbnail">
-                                    <img src="public/media/product/9.jpg" alt="">
+                                    <img src="../public/media/product/9.jpg" alt="">
                                 </a>
                                 <div class="product-details">
                                     <a href="single-product.php" class="product-title">Drums & Percussion</a>
@@ -108,7 +108,7 @@
                             </li>
                             <li class="cart-item clearfix">
                                 <a href="single-product.php" class="product-thumbnail">
-                                    <img src="public/media/product/10.jpg" alt="">
+                                    <img src="../public/media/product/10.jpg" alt="">
                                 </a>
                                 <div class="product-details">
                                     <a href="single-product.php" class="product-title">Rocking Guitar</a>
@@ -123,7 +123,7 @@
                             </li>
                             <li class="cart-item clearfix">
                                 <a href="single-product.php" class="product-thumbnail">
-                                    <img src="public/media/product/11.jpg" alt="">
+                                    <img src="../public/media/product/11.jpg" alt="">
                                 </a>
                                 <div class="product-details">
                                     <a href="single-product.php" class="product-title">Exclusive Headphones</a>
@@ -158,24 +158,24 @@
         <div class="header-inner">
             <div class="tim-container clearfix">
                 <div id="site-logo" class="float-left">
-                    <a href="index.php" class="logo-main">
-                        <img src="public/image/logo.png" alt="logo">
+                    <a href="../index.php" class="logo-main">
+                        <img src="../public/image/logo.png" alt="logo">
                     </a>
 
-                    <a href="index.php" class="logo-stickky">
-                        <img src="public/image/logo-sticky.png" alt="logo">
+                    <a href="../index.php" class="logo-stickky">
+                        <img src="../public/image/logo-sticky.png" alt="logo">
                     </a>
                 </div>
                 <div class="nav float-right">
                     <ul id="main-header-menu">
                         <li class="menu-item-has-children">
-                            <a href="index.php">Home</a>
+                            <a href="../index.php">Home</a>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="artist.php">Artist</a>
+                            <a href="../artist.php">Artist</a>
                         </li>
                         <li class="menu-item-has-children active">
-                            <a href="album.php" data-filter=".design">Album</a>
+                            <a href="../album.php" data-filter=".design">Album</a>
                             <ul class="sub-menu">
                                 <li><a href="jazz.php">Jazz</a></li>
                                 <li><a href="rnb.php">R&B</a></li>
@@ -185,7 +185,7 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="event.php">Events</a>
+                            <a href="../event.php">Events</a>
 
                         </li>
                         <li class="menu-item-has-children">
@@ -233,7 +233,7 @@
     <header id="mobile-nav-wrap">
         <div class="mob-header-inner d-flex justify-content-between">
             <div id="mobile-logo" class="d-flex justify-content-start">
-                <a href="index.php"><img src="public/image/logo.png" alt="Site Logo"></a>
+                <a href="../index.php"><img src="../public/image/logo.png" alt="Site Logo"></a>
             </div>
 
             <ul class="user-link nav justify-content-end">
@@ -259,8 +259,8 @@
         <div class="mobile-nav-top-wrap">
             <div class="mob-header-inner clearfix">
                 <div class="d-flex justify-content-start mobile-logo">
-                    <a href="index.php">
-                        <img src="public/image/logo-dark.png" alt="Site Logo">
+                    <a href="../index.php">
+                        <img src="../public/image/logo-dark.png" alt="Site Logo">
                     </a>
                 </div>
 
@@ -283,7 +283,7 @@
                 <li>
                     <a href="#0" class="dropdownlink">Home</a>
                     <ul class="submenuItems">
-                        <li><a href="index.php">Home One</a></li>
+                        <li><a href="../index.php">Home One</a></li>
                         <li><a href="index-two.php">Home Two</a></li>
                         <li><a href="index-three.php">Home Three</a></li>
                         <li><a href="index-four.php">Home Four</a></li>
@@ -294,7 +294,7 @@
 
                 </li>
                 <li>
-                    <a href="album.php">Album</a>
+                    <a href="../album.php">Album</a>
                 </li>
                 <li>
                     <a href="#0" class="dropdownlink">Events</a>
@@ -341,7 +341,7 @@
             </div>
 
             <div class="breadcrumbs">
-                <a href="index.php">Home</a>
+                <a href="../index.php">Home</a>
                 <span>/</span>
                 <span>Album</span>
             </div>
@@ -364,11 +364,11 @@
                         <li class="grid-sizer"></li>
                         <li class="tim-album-item grid-item rock rap jazz">
                             <div class="tim-isotope-grid__img effect-active">
-                                <img src="public/media/album/1.jpg" alt="album thumb" />
+                                <img src="../public/media/album/1.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -377,11 +377,11 @@
                         </li>
                         <li class="tim-album-item grid-item rock classical">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/2.jpg" alt="album thumb" />
+                                <img src="../public/media/album/2.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -390,11 +390,11 @@
                         </li>
                         <li class="tim-album-item grid-item rap">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/3.jpg" alt="album thumb" />
+                                <img src="../public/media/album/3.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -403,11 +403,11 @@
                         </li>
                         <li class="tim-album-item grid-item classical rock">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/4.jpg" alt="album thumb" />
+                                <img src="../public/media/album/4.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -416,11 +416,11 @@
                         </li>
                         <li class="tim-album-item grid-item classical rock">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/5.jpg" alt="album thumb" />
+                                <img src="../public/media/album/5.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -429,11 +429,11 @@
                         </li>
                         <li class="tim-album-item grid-item classical">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/6.jpg" alt="album thumb" />
+                                <img src="../public/media/album/6.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -442,11 +442,11 @@
                         </li>
                         <li class="tim-album-item grid-item jazz">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/7.jpg" alt="album thumb" />
+                                <img src="../public/media/album/7.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -455,11 +455,11 @@
                         </li>
                         <li class="tim-album-item grid-item jazz rap">
                             <div class="tim-isotope-grid__img">
-                                <img src="public/media/album/8.jpg" alt="album thumb" />
+                                <img src="../public/media/album/8.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -474,11 +474,11 @@
                         <li class="grid-sizer"></li>
                         <li class="tim-album-item grid-item rock rap jazz">
                             <div class="tim-isotope-grid__img effect-active">
-                                <img src="public/media/album/1.jpg" alt="album thumb" />
+                                <img src="../public/media/album/1.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -487,11 +487,11 @@
                         </li>
                         <li class="tim-album-item grid-item rock rap jazz">
                             <div class="tim-isotope-grid__img effect-active">
-                                <img src="public/media/album/1.jpg" alt="album thumb" />
+                                <img src="../public/media/album/1.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -500,11 +500,11 @@
                         </li>
                         <li class="tim-album-item grid-item rock rap jazz">
                             <div class="tim-isotope-grid__img effect-active">
-                                <img src="public/media/album/1.jpg" alt="album thumb" />
+                                <img src="../public/media/album/1.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn tim-btn-bgt">Buy Now</a>
@@ -557,11 +557,11 @@
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="tim-album-item">
                             <div class="tim-feature-image">
-                                <img src="public/media/album/1.jpg" alt="album thumb" />
+                                <img src="../public/media/album/1.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn">Buy Now</a>
@@ -574,11 +574,11 @@
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="tim-album-item">
                             <div class="tim-feature-image">
-                                <img src="public/media/album/2.jpg" alt="album thumb" />
+                                <img src="../public/media/album/2.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn">Buy Now</a>
@@ -591,11 +591,11 @@
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="tim-album-item">
                             <div class="tim-feature-image">
-                                <img src="public/media/album/3.jpg" alt="album thumb" />
+                                <img src="../public/media/album/3.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn">Buy Now</a>
@@ -608,11 +608,11 @@
                     <div class="col-xl-3 col-lg-6 col-sm-6">
                         <div class="tim-album-item">
                             <div class="tim-feature-image">
-                                <img src="public/media/album/4.jpg" alt="album thumb" />
+                                <img src="../public/media/album/4.jpg" alt="album thumb" />
                             </div>
                             <div class="album_details_wrap">
                                 <div class="album-info">
-                                    <a class="popup-modal" href="public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
+                                    <a class="popup-modal" href="../public/media/album/1.jpg"><i class="iconsmind-Magnifi-Glass"></i></a>
                                     <h4 class="album-title">By The Way Rain</h4>
                                     <h5 class="artist-name">Song Artist Name</h5>
                                     <a href="#" class="tim-btn">Buy Now</a>
@@ -667,42 +667,42 @@
 </div>
 <!-- /#site -->
 <!-- Dependency Scripts -->
-<script src="public/dependencies/jquery/jquery.min.js"></script>
-<script src="public/dependencies/jquery-ui/jquery-ui.min.js"></script>
-<script src="public/dependencies/bootstrap/js/bootstrap.min.js"></script>
-<script src="public/dependencies/swiper/js/swiper.min.js"></script>
-<script src="public/dependencies/swiperRunner/swiperRunner.min.js"></script>
-<script src="public/dependencies/wow/js/wow.min.js"></script>
-<script src="public/dependencies/jquery.countdown/jquery.countdown.min.js"></script>
-<script src="public/dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-<script src="public/dependencies/jquery.spinner/js/jquery.spinner.js"></script>
-<script src="public/dependencies/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="public/dependencies/masonry-layout/masonry.pkgd.min.js"></script>
-<script src="public/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="public/dependencies/slick-carousel/js/slick.min.js"></script>
-<script src="public/js/headroom.js"></script>
-<script src="public/js/soundmanager2.js"></script>
-<script src="public/js/mp3-player-button.js"></script>
-<script src="public/js/smoke.js"></script>
-<script src="public/dependencies/FitText.js/js/jquery.fittext.js"></script>
-<script src="public/dependencies/gmap3/js/gmap3.min.js"></script>
+<script src="../public/dependencies/jquery/jquery.min.js"></script>
+<script src="../public/dependencies/jquery-ui/jquery-ui.min.js"></script>
+<script src="../public/dependencies/bootstrap/js/bootstrap.min.js"></script>
+<script src="../public/dependencies/swiper/js/swiper.min.js"></script>
+<script src="../public/dependencies/swiperRunner/swiperRunner.min.js"></script>
+<script src="../public/dependencies/wow/js/wow.min.js"></script>
+<script src="../public/dependencies/jquery.countdown/jquery.countdown.min.js"></script>
+<script src="../public/dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+<script src="../public/dependencies/jquery.spinner/js/jquery.spinner.js"></script>
+<script src="../public/dependencies/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../public/dependencies/masonry-layout/masonry.pkgd.min.js"></script>
+<script src="../public/dependencies/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="../public/dependencies/slick-carousel/js/slick.min.js"></script>
+<script src="../public/js/headroom.js"></script>
+<script src="../public/js/soundmanager2.js"></script>
+<script src="../public/js/mp3-player-button.js"></script>
+<script src="../public/js/smoke.js"></script>
+<script src="../public/dependencies/FitText.js/js/jquery.fittext.js"></script>
+<script src="../public/dependencies/gmap3/js/gmap3.min.js"></script>
 <!--	<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
-<script src='public/dependencies/tilt.js/js/tilt.jquery.js'></script>
-<script src='public/js/parallax.min.js'></script>
+<script src='../public/dependencies/tilt.js/js/tilt.jquery.js'></script>
+<script src='../public/js/parallax.min.js'></script>
 <!-- Player -->
-<script src="public/dependencies/jPlayer/js/jquery.jplayer.min.js"></script>
-<script src="public/dependencies/jPlayer/js/jplayer.playlist.min.js"></script>
-<script src="public/js/myplaylist.js"></script>
+<script src="../public/dependencies/jPlayer/js/jquery.jplayer.min.js"></script>
+<script src="../public/dependencies/jPlayer/js/jplayer.playlist.min.js"></script>
+<script src="../public/js/myplaylist.js"></script>
 
 <!-- Remove It -->
-<script src="public/dependencies/colornip/colornip.min.js"></script>
+<script src="../public/dependencies/colornip/colornip.min.js"></script>
 
 <!--Google map api -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsBrMPsyNtpwKXPPpG54XwJXnyobfMAIc"></script>
 
 <!-- Site Scripts -->
-<script src="public/js/app.js"></script>
+<script src="../public/js/app.js"></script>
 
 
 </body>

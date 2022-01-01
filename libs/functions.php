@@ -39,4 +39,19 @@
             endif;
         endforeach;
     }
+    function get_all_artist ($conn) {
+    //    $stmt = $conn->prepare("SELECT p.*, artist_name as cartist_name FROM artist as p, category as c WHERE p.category_id = c.id ORDER BY p.id DESC");
+        $stmt = $conn->prepare("SELECT * FROM artist ORDER BY id_artist ASC");
+        $stmt->execute();
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
+    function get_all_album ($conn) {
+    //    $stmt = $conn->prepare("SELECT p.*, album_name as calbum_name FROM album as p, category as c WHERE p.category_id = c.id ORDER BY p.id DESC");
+        $stmt = $conn->prepare("SELECT * FROM album ORDER BY id_album ASC");
+        $stmt->execute();
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
+
 ?>

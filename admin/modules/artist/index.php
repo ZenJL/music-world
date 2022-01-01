@@ -1,7 +1,7 @@
 
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Song List</h3>
+        <h3 class="card-title">artist List</h3>
     </div>
     <div class="card-body">
 
@@ -9,39 +9,34 @@
             <thead>
                 <tr>
                     <th>Image</th>
-                    <th>Song id</th>
-                    <th>Song name</th>
-                    <th>Artist</th>
-                    <th>Song lyric</th>
-                    <th>Release date</th>
+                    <th>Artist id</th>
+                    <th>Artist name</th>
+                    <th>Artist details</th>
+                    <th>Artist achievements</th>
                     <th>Category</th>
-                    <th>Song download count</th>
-
-                    <th>Xóa</th>
-                    <th>Sửa</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
 
-                    $songs = get_all_song ($conn);
+                    $artists = get_all_artist ($conn);
                     $cats = get_all_category($conn);
                     $artists = get_all_artist($conn);
-                    foreach ($songs as $song) {
+                    foreach ($artists as $artist) {
                 ?>
                 <tr>
                     <td>
-                        <img onerror="imgError(this);" src="../public/upload/<?php echo $song["image"] ?>" width="80px" />
+                        <img onerror="imgError(this);" src="../public/upload/<?php echo $artist["artist_image"] ?>" width="80px" />
                     </td>
-                    <td><?php echo $song["id_song"] ?></td>
-                    <td><?php echo $song["song_name"] ?></td>
-                    <td><?php echo $artists[$song["id_artist"]-1]["artist_name"] ?></td>
-                    <td><?php echo $song["song_lyric"] ?></td>
-                    <td><?php echo $song["song_date"] ?></td>
-                    <td><?php echo $cats[$song["category_id"]-1]["name"] ?></td>
-                    <td><?php echo $song["song_download_count"] ?></td>
-                    <td><a onClick="return checkDelete('Delete this song?')" href="index.php?module=song&action=delete&id=<?php echo $song["id_song"] ?>">Delete</a></td>
-                    <td><a href="index.php?module=song&action=edit&id=<?php echo $song["id"] ?>">Edit</a></td>
+                    <td><?php echo $artist["id_artist"] ?></td>
+                    <td><?php echo $artist["artist_name"] ?></td>
+                    <td><?php echo $artist["artist_details"] ?></td>
+                    <td><?php echo $artist["artist_achievements"] ?></td>
+                    <td><?php echo $cats[$artist["category_id"]-1]["name"] ?></td>
+                    <td><a onClick="return checkDelete('Delete this artist?')" href="index.php?module=artist&action=delete&id=<?php echo $artist["id_artist"] ?>">Delete</a></td>
+                    <td><a href="index.php?module=artist&action=edit&id=<?php echo $artist['id_artist'] ?>">Edit</a></td>
                 </tr>
                 <?php 
                     }
@@ -50,13 +45,13 @@
             <tfoot>
                 <tr>
                     <th>Image</th>
-                    <th>Song id</th>
-                    <th>Song name</th>
-                    <th>Artist</th>
-                    <th>Song lyric</th>
-                    <th>Release date</th>
+                    <th>Artist id</th>
+                    <th>Artist name</th>
+                    <th>Artist details</th>
+                    <th>Artist achievements</th>
                     <th>Category</th>
-                    <th>Song download count</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
                 </tr>
             </tfoot>
         </table>

@@ -13,24 +13,24 @@ function get_all_category ($conn,$edit = false,$id = null) {
 }
 
 function create_song ($conn,$song) {
-    $stmt = $conn->prepare("INSERT INTO `song`(`song_name`, `category_id`, `song_date`, `song_lyric`, `image`, `id_artist`) VALUES (:song_name, :category_id, :song_date, :song_lyric, :image, :id_artist)");
+    $stmt = $conn->prepare("INSERT INTO `song`(`song_name`, `category_id`, `id_album`, `song_lyric`, `song_image`, `id_artist`) VALUES (:song_name, :category_id, :id_album, :song_lyric, :song_image, :id_artist)");
     $stmt->bindParam(':song_name',$song["song_name"],PDO::PARAM_STR);
     $stmt->bindParam(':category_id',$song["category_id"],PDO::PARAM_INT);
-    $stmt->bindParam(':song_date',$song["song_date"],PDO::PARAM_STR);
+    $stmt->bindParam(':id_album',$song["id_album"],PDO::PARAM_INT);
     $stmt->bindParam(':song_lyric',$song["song_lyric"],PDO::PARAM_STR);
-    $stmt->bindParam(':image',$song["image"],PDO::PARAM_STR);
+    $stmt->bindParam(':song_image',$song["song_image"],PDO::PARAM_STR);
     $stmt->bindParam(':id_artist',$song["id_artist"],PDO::PARAM_INT);
     $stmt->execute();
     return $stmt;
 }
 
 function edit_song ($conn,$song) {
-    $stmt = $conn->prepare("UPDATE song SET song_name= :song_name,category_id= :category_id,song_date= :song_date,song_lyric= :song_lyric,image= :image,id_artist= :id_artist WHERE id = :id");
+    $stmt = $conn->prepare("UPDATE song SET song_name= :song_name,category_id= :category_id,id_album= :id_album,song_lyric= :song_lyric,song_image= :song_image,id_artist= :id_artist WHERE id = :id");
     $stmt->bindParam(':song_name',$song["song_name"],PDO::PARAM_STR);
     $stmt->bindParam(':category_id',$song["category_id"],PDO::PARAM_INT);
-    $stmt->bindParam(':song_date',$song["song_date"],PDO::PARAM_STR);
+    $stmt->bindParam(':id_album',$song["id_album"],PDO::PARAM_INT);
     $stmt->bindParam(':song_lyric',$song["song_lyric"],PDO::PARAM_STR);
-    $stmt->bindParam(':image',$song["image"],PDO::PARAM_STR);
+    $stmt->bindParam(':song_image',$song["song_image"],PDO::PARAM_STR);
     $stmt->bindParam(':id_artist',$song["id_artist"],PDO::PARAM_INT);
     $stmt->bindParam(':id',$song["id"],PDO::PARAM_INT);
     $stmt->execute();
@@ -64,13 +64,6 @@ function get_all_song ($conn) {
     return $data;
 }
 
-function get_all_artist ($conn) {
-//    $stmt = $conn->prepare("SELECT p.*, song_name as csong_name FROM song as p, category as c WHERE p.category_id = c.id ORDER BY p.id DESC");
-    $stmt = $conn->prepare("SELECT * FROM artist ORDER BY id_artist ASC");
-    $stmt->execute();
-    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $data;
-}
 
 function get_song ($conn,$id) {
     $stmt = $conn->prepare("SELECT * FROM song WHERE id = :id");
