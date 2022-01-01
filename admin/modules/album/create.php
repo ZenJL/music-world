@@ -21,28 +21,28 @@ if (isset($_POST["create"])) {
         $errors[] = "Please select artist";
     }
 
-    if (empty($_FILES["image"]["name"])) {
+    if (empty($_FILES["album_image"]["name"])) {
         $errors[] = "Please select an image";
     }
 
-    if (!checkExt($_FILES["image"]["name"])) {
+    if (!checkExt($_FILES["album_image"]["name"])) {
         $errors[] = "Not in image file";
     }
 
     if (empty($errors)) {
-        $file = changeNameFile($_FILES["image"]["name"]);
+        $file = changeNameFile($_FILES["album_image"]["name"]);
 
         $data = array(
             'album_name' => $_POST["album_name"],
             'album_date' => $_POST["album_date"],
             'id_artist' => $_POST["id_artist"],
-            'image' => $file,
+            'album_image' => $file,
             "category_id" => $_POST["category_id"]
         );
 
         if (check_album_exist ($conn,$data)) {
             create_album ($conn,$data);
-            move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
+            move_uploaded_file($_FILES["album_image"]["tmp_name"],'../public/upload/'.$file);
 
             header("location:index.php?module=album");
             exit();
@@ -113,7 +113,7 @@ if (isset($_POST["create"])) {
             <div class="form-group">
                 <label>Image</label>
                 <div class="custom-file">
-                    <input type="file" name="image" class="custom-file-input" id="customFile">
+                    <input type="file" name="album_image" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
             </div>

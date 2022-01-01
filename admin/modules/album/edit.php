@@ -1,70 +1,71 @@
 <?php 
 if (!isset($_GET["id"])) {
-    header("location:index.php?module=song&action=index");
+    header("location:index.php?module=album&action=index");
     exit();
 } else {
     $errors = array();
     $id = $_GET["id"];
     $parent_category = get_all_category ($conn);
     
-    if (!check_song_id ($conn,$id)) {
-        header("location:index.php?module=song&action=index");
+    if (!check_album_id ($conn,$id)) {
+        header("location:index.php?module=album&action=index");
         exit();
     }
 
-    $song = get_song ($conn,$id);
+    $album = get_album ($conn,$id);
 
     if (isset($_POST["edit"])) {
 
-        if (empty($_POST["name"])) {
-            $errors[] = "Vui lòng nhập tên sản phẩm";
+        if (empty($_POST["album_name"])) {
+            $errors[] = "Enter album name";
         }
 
-        if (empty($_POST["price"])) {
-            $errors[] = "Vui lòng nhập giá sản phẩm";
+        if (empty($_POST["category_id"])) {
+            $errors[] = "Please select album category";
         }
 
-        if (!is_numeric($_POST["price"])) {
-            $errors[] = "Giá sản phẩm phải là số";
+        if (empty($_POST["album_date"])) {
+            $errors[] = "Please enter album release date";
         }
 
-        if (empty($_POST["intro"])) {
-            $errors[] = "Vui lòng nhập tóm tắt";
+        if (empty($_POST["id_artist"])) {
+            $errors[] = "Please select artist";
+        }
+
+        if (empty($_FILES["album_image"]["name"])) {
+            $errors[] = "Please select an image";
         }
 
         if (empty($errors)) {
-        
+
             $data = array(
-                'name' => $_POST["name"],
-                'price' => $_POST["price"],
-                'intro' => $_POST["intro"],
-                'content' => $_POST["content"],
-                'status' => $_POST["status"],
-                "featured" => $_POST["featured"],
-                "category_id" => $_POST["category_id"],
-                "id" => $id
+                'album_name' => $_POST["album_name"],
+                'album_date' => $_POST["album_date"],
+                'id_artist' => $_POST["id_artist"],
+                'album_image' => $file,
+                "category_id" => $_POST["category_id"]
             );
 
-            if (check_song_exist ($conn,$data,true)) {
+            if (check_album_exist ($conn,$data,true)) {
 
-                if (!empty($_FILES["image"]["name"])) {
-                    if (!checkExt($_FILES["image"]["name"])) {
-                        $errors[] = "Không phải là file hình";
+                if (!empty($_FILES["album_image"]["name"])) {
+                    if (!checkExt($_FILES["album_image"]["name"])) {
+                        $errors[] = "Not in image file";
                     } else {
-                        $file = changeNameFile($_FILES["image"]["name"]);
-                        $data["image"] = $file;
-                        move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
+                        $file = changeNameFile($_FILES["album_image"]["name"]);
+                        $data["album_image"] = $file;
+                        move_uploaded_file($_FILES["album_image"]["tmp_name"],'../public/upload/'.$file);
                     }
                 } else {
-                    $data["image"] = $song["image"];
+                    $data["album_image"] = $album["album_image"];
                 }
 
-                edit_song ($conn,$data);
+                edit_album ($conn,$data);
                 
-                header("location:index.php?module=song");
+                header("location:index.php?module=album");
                 exit();
             } else {
-                $errors[] = "Tên sản phẩm này đã tồn tại rồi";
+                $errors[] = "This album has already existed";
             }
         }
     }
@@ -89,116 +90,63 @@ if (!isset($_GET["id"])) {
             </div>
             <div class="card-body">
                 <div class="form-group">
-                    <label>Thể loại</label>
+                    <label>Category</label>
                     <select class="form-control" name="category_id">
-                        <?php recursiveOption ($parent_category,$_POST["category_id"],3) ?>
+                        <?php recursiveOption ($parent_category,$_POST["category_id"],0) ?>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label>Tên sản phẩm</label>
-                    <input type="text" name="name" class="form-control" placeholder="Vui lòng nhập tên sản phẩm"
-                        <?php 
-                            if (isset($_POST["name"])) {
-                                echo 'value="'.$_POST["name"].'"';
-                            } else {
-                                echo 'value="'.$song["name"].'"';
-                            }
-                        ?>
+                    <label>Album name</label>
+                    <input type="text" name="album_name" class="form-control" placeholder="Enter album name"
+                        <?php
+                        if (isset($_POST["album_name"])) {
+                            echo 'value="'.$_POST["album_name"].'"';
+                        } else {
+                            echo 'value="'.$album["album_name"].'"';
+                        }
+                    ?>
                     >
                 </div>
 
                 <div class="form-group">
-                    <label>Giá</label>
-                    <input type="text" name="price" class="form-control" placeholder="Vui lòng nhập giá sản phẩm"
-                        <?php 
-                            if (isset($_POST["price"])) {
-                                echo 'value="'.$_POST["price"].'"';
-                            } else {
-                                echo 'value="'.$song["price"].'"';
-                            }
-                        ?>
-                    >
+                    <label>Artist</label> <br>
+                    <!--                <input type="text" name="id_artist" class="form-control" placeholder="Enter album's artist">-->
+                    <select class="form-control" name="id_artist">
+                        <?php
+                        $artists = get_all_artist($conn);
+                        foreach($artists as $artist){
+                            ?>
+                            <option value="<?php echo $artist["id_artist"] ?>"
+                                <?php if($artist["id_artist"]== $album["id_artist"]){ echo "selected";}?>
+                            >
+                                <?php echo $artist["artist_name"]?>
+                            </option>
+                        <?php } ?>
+                    </select>
                 </div>
 
-                <div class="form-group">
-                    <label>Tóm tắt</label>
-                    <textarea class="form-control" name="intro"><?php 
-                        if (isset($_POST["intro"])) {
-                            echo $_POST["intro"];
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                    <label>Album release date (YYYY-MM-DD)</label>
+                    <input placeholder="2021-12-31" type="text" id="example" name="album_date" class="form-control"
+                        <?php
+                        if (isset($_POST["album_date"])) {
+                            echo 'value="'.$_POST["album_date"].'"';
                         } else {
-                            echo $song["intro"];
+                            echo 'value="'.$album["album_date"].'"';
                         }
-                    ?></textarea>
-                    <script>
-                        CKEDITOR.replace('intro',{
-                            filebrowserBrowseUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/ckfinder.html',
-                            filebrowserUploadUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                        });
-                    </script>
+                        ?>>
                 </div>
 
-                <div class="form-group">
-                    <label>Nội dung</label>
-                    <textarea class="form-control" name="content"><?php 
-                        if (isset($_POST["content"])) {
-                            echo $_POST["content"];
-                        } else {
-                            echo $song["content"];
-                        }
-                    ?></textarea>
-                    <script>
-                        CKEDITOR.replace('content',{
-                            filebrowserBrowseUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/ckfinder.html',
-                            filebrowserUploadUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
-                        });
-                    </script>
-                </div>
 
                 <div class="form-group">
-                    <label>Hình ảnh hiện tại</label>
-                    <img src="../public/upload/<?php echo $song["image"] ?>" onerror="imgError(this);" width="100px" class="d-block" />
-                </div>
-
-                <div class="form-group">
-                    <label>Hình ảnh</label>
+                    <label>Image</label>
                     <div class="custom-file">
-                        <input type="file" name="image" class="custom-file-input" id="customFile">
+                        <input type="file" name="album_image" class="custom-file-input" id="customFile">
                         <label class="custom-file-label" for="customFile">Choose file</label>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label>Trạng thái</label>
-                    <select class="form-control" name="status">
-                        <option value="1" <?php 
-                            if ($song["status"] == 1) {
-                                echo "selected";
-                            }
-                        ?>>Hiển thị</option>
-                        <option value="0" <?php 
-                            if ($song["status"] == 0) {
-                                echo "selected";
-                            }
-                        ?>>Ẩn</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Nổi bật</label>
-                    <select class="form-control" name="featured">
-                        <option value="0"<?php 
-                            if ($song["featured"] == 0) {
-                                echo "selected";
-                            }
-                        ?>>Ẩn</option>
-                        <option value="1"<?php 
-                            if ($song["featured"] == 1) {
-                                echo "selected";
-                            }
-                        ?>>Hiển thị</option>
-                    </select>
-                </div>
             </div>
             <div class="card-footer">
                 <button type="submit" name="edit" class="btn btn-info">Sửa</button>

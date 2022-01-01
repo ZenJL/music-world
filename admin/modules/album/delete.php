@@ -1,24 +1,24 @@
 <?php 
 if (!isset($_GET["id"])) {
-    header("location:index.php?module=song&action=index");
+    header("location:index.php?module=album&action=index");
     exit();
 } else {
     $id = $_GET["id"];
     
-    if (!check_song_id() ($conn,$id)) {
-        header("location:index.php?module=song&action=index");
+    if (!check_album_id ($conn,$id)) {
+        header("location:index.php?module=album&action=index");
         exit();
     }
 
-    $song = get_song() ($conn,$id);
+    $album = get_album ($conn,$id);
 
-    if (file_exists('../public/upload/'.$song["song_image"])) {
-        unlink('../public/upload/'.$song["song_image"]);
+    if (file_exists('../public/upload/'.$album["album_image"])) {
+        unlink('../public/upload/'.$album["album_image"]);
     }
     
-    delete_song() ($conn,$id);
+    delete_album ($conn,$id);
 
-    header("location:index.php?module=song&action=index");
+    header("location:index.php?module=album&action=index");
     exit();
 }
 ?>

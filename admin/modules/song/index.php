@@ -7,7 +7,6 @@
         <table id="datatable" class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>Image</th>
                     <th>Song id</th>
                     <th>Song name</th>
                     <th>Artist</th>
@@ -27,9 +26,6 @@
                     foreach ($songs as $song) {
                 ?>
                 <tr>
-                    <td>
-                        <img onerror="imgError(this);" src="../public/upload/<?php echo $song["song_image"] ?>" width="80px" />
-                    </td>
                     <td><?php echo $song["id_song"] ?></td>
                     <td><?php echo $song["song_name"] ?></td>
                     <td><?php echo $artists[$song["id_artist"]-1]["artist_name"] ?></td>
@@ -46,7 +42,6 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Image</th>
                     <th>Song id</th>
                     <th>Song name</th>
                     <th>Artist</th>

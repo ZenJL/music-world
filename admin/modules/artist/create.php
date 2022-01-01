@@ -22,28 +22,28 @@ if (isset($_POST["create"])) {
     }
 
 
-    if (empty($_FILES["image"]["name"])) {
+    if (empty($_FILES["artist_image"]["name"])) {
         $errors[] = "Please select an image";
     }
 
-    if (!checkExt($_FILES["image"]["name"])) {
-        $errors[] = "Not in image file";
+    if (!checkExt($_FILES["artist_image"]["name"])) {
+        $errors[] = "Not an image file";
     }
 
     if (empty($errors)) {
-        $file = changeNameFile($_FILES["image"]["name"]);
+        $file = changeNameFile($_FILES["artist_image"]["name"]);
 
         $data = array(
             'artist_name' => $_POST["artist_name"],
-            'artist_lyric' => $_POST["artist_details"],
-            'artist_date' => $_POST["artist_achievements"],
-            'image' => $file,
+            'artist_details' => $_POST["artist_details"],
+            'artist_achievements' => $_POST["artist_achievements"],
+            'artist_image' => $file,
             "category_id" => $_POST["category_id"]
         );
 
         if (check_artist_exist ($conn,$data)) {
             create_artist ($conn,$data);
-            move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
+            move_uploaded_file($_FILES["artist_image"]["tmp_name"],'../public/upload/'.$file);
 
             header("location:index.php?module=artist");
             exit();
@@ -80,7 +80,7 @@ if (isset($_POST["create"])) {
             </div>
 
             <div class="form-group">
-                <label>artist name</label>
+                <label>Artist name</label>
                 <input type="text" name="artist_name" class="form-control" placeholder="Enter artist name"
                     <?php 
                         if (isset($_POST["artist_name"])) {
@@ -91,7 +91,7 @@ if (isset($_POST["create"])) {
             </div>
 
             <div class="form-group">
-                <label>artist lyric</label>
+                <label>Artist details</label>
              <textarea class="form-control" name="artist_details"><?php
                     if (isset($_POST["artist_details"])) {
                         echo $_POST["artist_details"];
@@ -106,7 +106,7 @@ if (isset($_POST["create"])) {
             </div>
 
             <div class="form-group">
-                <label>artist lyric</label>
+                <label>Artist achievements</label>
                 <textarea class="form-control" name="artist_achievements"><?php
                     if (isset($_POST["artist_achievements"])) {
                         echo $_POST["artist_achievements"];
@@ -123,7 +123,7 @@ if (isset($_POST["create"])) {
             <div class="form-group">
                 <label>Image</label>
                 <div class="custom-file">
-                    <input type="file" name="image" class="custom-file-input" id="customFile">
+                    <input type="file" name="artist_image" class="custom-file-input" id="customFile">
                     <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
             </div>

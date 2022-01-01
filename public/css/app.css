@@ -8293,7 +8293,7 @@ ul.comment-list .comment-body .reply a:hover {
 }
 
 .album-feature img {
-  max-width: 100%;
+  max-width: 500px;
 }
 
 .album-feature .artist-music-inner {
@@ -23007,4 +23007,10 @@ ul.products li.product-two .ajax_add_to_cart i {
   -webkit-transition: all 0.8s cubic-bezier(0, 1.09, 1, 1);
   -o-transition: all 0.8s cubic-bezier(0, 1.09, 1, 1);
   transition: all 0.8s cubic-bezier(0, 1.09, 1, 1);
+}
+
+.artist_frame{
+  width:500px;
+  height: 500px;
+  margin:auto;
 }

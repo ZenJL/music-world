@@ -39,6 +39,24 @@
             endif;
         endforeach;
     }
+    function checkExt ($filename) {
+        $pos = strrpos($filename,".") + 1;
+        $ext = substr($filename,$pos);
+        if ($ext != "png" && $ext != "jpeg" && $ext != "jpg" && $ext != "gif" && $ext != "jfif") {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function changeNameFile ($filename) {
+        $filename = trim($filename);
+        $filename = mb_strtolower($filename);
+        $filename = preg_replace('!\s+!', ' ', $filename);
+        $filename = str_replace(" ","-",$filename);
+        $filename = time()."-".$filename;
+        return $filename;
+    }
     function get_all_artist ($conn) {
     //    $stmt = $conn->prepare("SELECT p.*, artist_name as cartist_name FROM artist as p, category as c WHERE p.category_id = c.id ORDER BY p.id DESC");
         $stmt = $conn->prepare("SELECT * FROM artist ORDER BY id_artist ASC");

@@ -21,29 +21,19 @@ if (isset($_POST["create"])) {
         $errors[] = "Please enter album id";
     }
 
-    if (empty($_FILES["image"]["name"])) {
-        $errors[] = "Please select an image";
-    }
-
-    if (!checkExt($_FILES["image"]["name"])) {
-        $errors[] = "Not in image file";
-    }
 
     if (empty($errors)) {
-        $file = changeNameFile($_FILES["image"]["name"]);
 
         $data = array(
             'song_name' => $_POST["song_name"],
             'id_artist' => $_POST["id_artist"],
             'song_lyric' => $_POST["song_lyric"],
             'id_album' => $_POST["id_album"],
-            'image' => $file,
             "category_id" => $_POST["category_id"]
         );
 
         if (check_song_exist ($conn,$data)) {
             create_song ($conn,$data);
-            move_uploaded_file($_FILES["image"]["tmp_name"],'../public/upload/'.$file);
 
             header("location:index.php?module=song");
             exit();
@@ -133,14 +123,6 @@ if (isset($_POST["create"])) {
                         filebrowserUploadUrl: 'http://localhost/Online/PHP-PROJECT/admin/public/plugins/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
                     });
                 </script>
-            </div>
-
-            <div class="form-group">
-                <label>Image</label>
-                <div class="custom-file">
-                    <input type="file" name="image" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
             </div>
 
         </div>
