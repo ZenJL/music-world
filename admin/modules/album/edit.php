@@ -74,7 +74,7 @@ if (!isset($_GET["id"])) {
     <?php if (!empty($errors)) { ?>
     <div class="alert alert-danger alert-dismissible">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-        <h5><i class="icon fas fa-ban"></i> Thông báo lỗi!</h5>
+        <h5><i class="icon fas fa-ban"></i> Error!</h5>
         <ul>
             <?php foreach ($errors as $error) { ?>
             <li><?php echo $error ?></li>
@@ -86,7 +86,7 @@ if (!isset($_GET["id"])) {
     <form method="POST" action="" enctype="multipart/form-data">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">Sửa sản phẩm</h3>
+                <h3 class="card-title">Edit album</h3>
             </div>
             <div class="card-body">
                 <div class="form-group">

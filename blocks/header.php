@@ -40,13 +40,13 @@
                         <a href="index.php?module=artist">Artist</a>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="index.php?module=album">Album</a>
+                        <a href="index.php?module=category">category</a>
                         <ul class="sub-menu">
-                            <li><a href="index.php?module=album">Jazz</a></li>
-                            <li><a href="index.php?module=album">R&B</a></li>
-                            <li><a href="index.php?module=album">Rock</a></li>
-                            <li><a href="index.php?module=album">Pop</a></li>
-                            <li><a href="index.php?module=album">Classical</a></li>
+                            <li><a href="index.php?module=category&type=jazz">Jazz</a></li>
+                            <li><a href="index.php?module=category&type=rnb">R&B</a></li>
+                            <li><a href="index.php?module=category&type=rock">Rock</a></li>
+                            <li><a href="index.php?module=category&type=pop">Pop</a></li>
+                            <li><a href="index.php?module=category&type=classical">Classical</a></li>
                         </ul>
 
                     </li>

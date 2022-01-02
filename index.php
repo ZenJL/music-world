@@ -86,13 +86,20 @@ ob_start();
     if (isset($_GET["module"])):
         $module = $_GET["module"];
         // check action
-
+        $type = null;
+        if (isset($_GET["type"])):
+            $type = $_GET["type"];
+        else:
+            $type = "index";
+        endif;
         // check correct module & action
-        if (file_exists("modules/$module.php")):
+        if (file_exists("category/$type.php")):
+            include ("category/$type.php");
+        elseif (file_exists("modules/$module.php") && empty($_GET["type"])):
             // include UI of each action in each module
             include ("modules/$module.php");
         else:
-            header('location: modules/home.php');
+            header('location: index.php');
             exit();
         endif;
 

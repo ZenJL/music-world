@@ -35,20 +35,6 @@
         return true;
     }
 
-    function get_all_category($conn, $id = null, $edit = false) {
-        if ($edit):
-            $stmt = $conn->prepare("SELECT * FROM category WHERE id != :id");
-            $stmt->bindParam(':id', $id, PDO::PARAM_STR);
-
-        else:
-                $stmt = $conn->prepare("SELECT * FROM category");
-
-        endif;
-
-        $stmt->execute();
-        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        return $data;
-    }
 
     function get_category($conn, $id) {
         $stmt = $conn->prepare("SELECT * FROM category WHERE id = :id");
