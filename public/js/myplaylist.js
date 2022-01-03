@@ -9,38 +9,38 @@ jQuery(document).ready(function($) {
     }, [{
         title: 'Happy Life',
         artist: 'Derwood Spinks',
-        mp3: 'media/audio/happy_life.mp3',
-        poster: "media/audio/01.jpg",
+        mp3: 'public/media/audio/happy_life.mp3',
+        poster: "public/media/audio/01.jpg",
       },
       {
         title: 'King Magicians',
         artist: 'Dan Mustaine',
-        mp3: 'media/audio/02.mp3',
-        poster: "media/audio/02.jpg",
+        mp3: 'public/media/audio/02.mp3',
+        poster: "public/media/audio/02.jpg",
       },
       {
         title: 'Leaving it Behind',
         artist: 'RZ Project',
-        mp3: 'media/audio/03.mp3',
-        poster: "media/audio/03.jpg"
+        mp3: 'public/media/audio/03.mp3',
+        poster: "public/media/audio/03.jpg"
       },
       {
         title: 'Bloodborne',
         artist: 'Chester Ray Banton',
-        mp3: 'media/audio/04.mp3',
-        poster: "media/audio/04.jpg"
+        mp3: 'public/media/audio/04.mp3',
+        poster: "public/media/audio/04.jpg"
       },
       {
         title: 'When Spells',
         artist: 'Dan Mustaine',
-        mp3: 'media/audio/05.mp3',
-        poster: "media/audio/05.jpg"
+        mp3: 'public/media/audio/05.mp3',
+        poster: "public/media/audio/05.jpg"
       },
       {
         title: 'When Spells',
         artist: 'Derwood Spinks',
-        mp3: 'media/audio/06.mp3',
-        poster: "media/audio/06.jpg"
+        mp3: 'public/media/audio/06.mp3',
+        poster: "public/media/audio/06.jpg"
       }
     ], {
       playlistOptions: {

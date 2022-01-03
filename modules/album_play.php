@@ -7,6 +7,7 @@ else:
     header('location: index.php');
 endif;
 ?>
+
 <!--============================-->
 <!--=        	Banner         =-->
 <!--============================-->
@@ -14,8 +15,7 @@ endif;
 <section class="page-header" data-bg-image="public/media/background/8.jpg">
     <div class="tim-container">
         <div class="page-header-title text-center">
-            <h3>Product List</h3>
-            <h2>& Album</h2>
+            <h2>Album details</h2>
         </div>
 
         <div class="breadcrumbs">
@@ -34,7 +34,7 @@ endif;
 <!--==================================-->
 <?php $albums = get_all_album($conn);
 $cats = get_all_category($conn);
-$artists = get_all_artist($conn)?>
+$artists = get_all_artist($conn);?>
 
 <section class="section-padding album-info-wrapper">
     <div class="container">
@@ -42,7 +42,7 @@ $artists = get_all_artist($conn)?>
 
             <div class="col-md-6 padding-remove">
                 <div class="single-album-image">
-                    <img src="public/media/album/17.jpg" alt="">
+                    <img src="public/media/album/<?php echo $albums[$albumid2-1]['album_image'];?>" alt="">
                 </div>
             </div>
             <!-- /.col-lg-6 -->
@@ -50,7 +50,7 @@ $artists = get_all_artist($conn)?>
             <div class="col-md-6 padding-remove">
                 <div class="single-album-details">
                     <div class="details-top">
-                        <h1><?php echo $albums[$albumid2-1]["album_name"]?></h1>
+                        <h1><?php echo $albums[$albumid2-1]["album_name"];?></h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     </div>
 
@@ -60,7 +60,6 @@ $artists = get_all_artist($conn)?>
                         <li>Release Day <span><?php echo $albums[$albumid2-1]["album_date"];?></span></li>
                         <li>Genre <span><?php echo $cats[$albums[$albumid2-1]["category_id"]-1]["name"];?></span></li>
                     </ul>
-
                     <div class="single-album-description">
                         <h6>Album Description</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -78,6 +77,7 @@ $artists = get_all_artist($conn)?>
 <!-- /.album-info  -->
 
 
+
 <section class="single-album-player section-padding">
     <div class="container">
         <div class="row">
@@ -85,7 +85,7 @@ $artists = get_all_artist($conn)?>
                 <!-- Audio Player -->
                 <div class="player-container">
                     <div class="current-tracks">
-                        <div id="main_player" class="jp-jplayer"><audio id="jp_audio_0" preload="metadata" src="http://localhost:4726/public/media/audio/happy_life.mp3" title="Happy Life"></audio></div>
+                        <div id="main_player" class="jp-jplayer"><audio id="jp_audio_0" preload="metadata" src="public/media/audio/happy_life.mp3" title="Happy Life"></audio></div>
                         <div id="nowPlaying">
                             <h3 class="track-name">Happy Life</h3>
                             <span class="artist-name">Derwood Spinks</span>
@@ -94,7 +94,7 @@ $artists = get_all_artist($conn)?>
                     </div>
                     <!-- /.current-tracks -->
 
-                    <div id="header_player" class="jp-audio" role="application" aria-label="public/media player">
+                    <div id="header_player" class="jp-audio" role="application" aria-label="media player">
                         <div class="jp-type-playlist clearfix">
                             <div class="jp-gui jp-interface">
                                 <div class="jp-controls">
@@ -161,151 +161,40 @@ $artists = get_all_artist($conn)?>
     </div>
     <!-- /.container  -->
 </section>
-<!-- /.single-album-player  -->
-
 
 <section class="related-album-single">
     <div class="container">
         <div class="section-title">
-            <h2>RELATED <span>ALBUM</span></h2>
+            <h2>ALBUMS <span>FROM THE SAME CATEGORY</span></h2>
         </div>
         <div class="swiper-container  columns-4 row" data-swiper-config='{ "loop": true, "speed": 700, "autoplay": false, "slidesPerView": 5, "grabCursor": true,"breakpoints": { "1190": { "slidesPerView": 4 }, "900": { "slidesPerView": 3 }, "700": { "slidesPerView": 2 }, "500": { "slidesPerView": 1 }}}'>
 
 
             <ul class=" swiper-wrapper related-album-wrapper">
+            <?php foreach($albums as $album){
+            if(($album['id_album'] != $albumid2) && ($album['category_id'] == $albums[$albumid2-1]["category_id"])){
 
+            ?>
 
                 <li class=" clearfix swiper-slide ">
                     <div class="single-related-album">
-                        <a href="#">
+                        <a href="index.php?module=album_play&id=<?php echo $album['id_album'];?>">
                     <img src="public/media/album/ra1.jpg" alt="">
                 </a>
                         <div class="single-related-prod-bottom">
                             <div class="left">
-                                <a href="#">Funny Litle World</a>
-                                <p>6 Tracks</p>
+                                <a href="index.php?module=album_play&id=<?php echo $album['id_album'];?>"><?php echo $album['album_name'];?></a>
                             </div>
-                            <a href="#" class="play-bottom"><i class="fa fa-play"></i></a>
                         </div>
                     </div>
                 </li>
-
-                <li class=" clearfix swiper-slide ">
-                    <div class="single-related-album">
-                        <a href="#">
-                    <img src="public/media/album/ra1.jpg" alt="">
-                </a>
-                        <div class="single-related-prod-bottom">
-                            <div class="left">
-                                <a href="#">Funny Litle World</a>
-                                <p>6 Tracks</p>
-                            </div>
-
-                            <a href="#" class="play-bottom"><i class="fa fa-play"></i></a>
-                        </div>
-                    </div>
-                </li>
-
-                <li class=" clearfix swiper-slide ">
-                    <div class="single-related-album">
-                        <a href="#">
-                    <img src="public/media/album/ra2.jpg" alt="">
-                </a>
-                        <div class="single-related-prod-bottom">
-                            <div class="left">
-                                <a href="#">Funny Litle World</a>
-                                <p>6 Tracks</p>
-                            </div>
-
-                            <a href="#" class="play-bottom"><i class="fa fa-play"></i></a>
-
-                        </div>
-                    </div>
-
-                </li>
-
-                <li class=" clearfix swiper-slide ">
-                    <div class="single-related-album">
-                        <a href="#">
-                    <img src="public/media/album/ra3.jpg" alt="">
-                </a>
-                        <div class="single-related-prod-bottom">
-                            <div class="left">
-                                <a href="#">Funny Litle World</a>
-                                <p>6 Tracks</p>
-                            </div>
-
-                            <a href="#" class="play-bottom"><i class="fa fa-play"></i></a>
-
-                        </div>
-                    </div>
-
-                </li>
-
-                <li class=" clearfix swiper-slide ">
-                    <div class="single-related-album">
-                        <a href="#">
-                    <img src="public/media/album/ra4.jpg" alt="">
-                </a>
-                        <div class="single-related-prod-bottom">
-                            <div class="left">
-                                <a href="#">Funny Litle World</a>
-                                <p>6 Tracks</p>
-                            </div>
-
-                            <a href="#" class="play-bottom"><i class="fa fa-play"></i></a>
-
-                        </div>
-                    </div>
-
-                </li>
-
+            <?php }}?>
 
             </ul>
+
         </div>
     </div>
     <!-- /.container  -->
 </section>
 <!-- /.related-album-single  -->
 
-<!--=================================-->
-<!--=        	Logo Carousel       =-->
-<!--=================================-->
-<section id="logo-carousel">
-    <div class="tim-container">
-        <div class="swiper-container tim-logo-carousel" data-swiper-config='{"loop": true, "speed": 700, "spaceBetween": 50, "autoplay": 3000, "pagination":"#brand-swiper-pagination", "slidesPerView": 5, "grabCursor": true, "paginationClickable": true, "breakpoints": { "1024": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 }, "500": { "slidesPerView": 2 }}}'>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="brand-logo">
-                        <img src="public/media/logo/1.png" alt="Brand Logo">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="brand-logo">
-                        <img src="public/media/logo/2.png" alt="Brand Logo">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="brand-logo">
-                        <img src="public/media/logo/3.png" alt="Brand Logo">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="brand-logo">
-                        <img src="public/media/logo/4.png" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="brand-logo">
-                        <img src="public/media/logo/5.png" alt="Brand Logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /.tim-container -->
-</section>
-<!-- /#logo-carousel -->

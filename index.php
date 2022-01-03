@@ -45,8 +45,8 @@ ob_start();
 
 <body id="home-version-1" class="home-version-1" data-style="default">
 
-<div class="loader loader-bar-ping-pong is-active"></div>
-<div id="site">
+    <div class="loader loader-bar-ping-pong is-active"></div>
+    <div id="site">
 
     <div class="Switcher">
         <button id="Switcher__control" class="Switcher__control"><i class="tim-cogwheel"></i></button>
@@ -137,8 +137,8 @@ ob_start();
 <script src="public/js/smoke.js"></script>
 <script src="public/dependencies/FitText.js/js/jquery.fittext.js"></script>
 <script src="public/dependencies/gmap3/js/gmap3.min.js"></script>
-<!--<script src='../../../cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>-->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<script src='public/cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>-->
 
 
 <script src='public/dependencies/tilt.js/js/tilt.jquery.js'></script>

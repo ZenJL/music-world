@@ -75,19 +75,25 @@
         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $data;
     }
-function get_all_category($conn, $id = null, $edit = false) {
-    if ($edit):
-        $stmt = $conn->prepare("SELECT * FROM category WHERE id != :id");
-        $stmt->bindParam(':id', $id, PDO::PARAM_STR);
+    function get_all_category($conn, $id = null, $edit = false) {
+        if ($edit):
+            $stmt = $conn->prepare("SELECT * FROM category WHERE id != :id");
+            $stmt->bindParam(':id', $id, PDO::PARAM_STR);
 
-    else:
-        $stmt = $conn->prepare("SELECT * FROM category");
+        else:
+            $stmt = $conn->prepare("SELECT * FROM category");
 
-    endif;
+        endif;
+        $stmt->execute();
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
 
-    $stmt->execute();
-    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $data;
-}
+    function get_all_event($conn) {
+        $stmt = $conn->prepare("SELECT * FROM event ORDER BY id_event ASC");
+        $stmt->execute();
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
 
 ?>
