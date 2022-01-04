@@ -9,11 +9,18 @@
                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
             <!-- /.site-social-link -->
+            <?php if(empty($_SESSION["user"])){?>
+            <ul class="user-login float-right">
+                <li><a href="modules/login/register.php">Sign Up</a></li>
+                <li><a href="modules/login/login.php">Sign In</a></li>
+            </ul>
+            <?php } else {?>
 
             <ul class="user-login float-right">
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="admin/login.php">Sign In</a></li>
-            </ul>
+                <li><?php echo "User: " . $_SESSION["user"] . " | ";?></li>
+                <li><a href="modules/login/logout.php" class="link-primary">Logout</a></li>
+            </ul>>
+            <?php } ?>
         </div>
         <!-- /.tim-container -->
     </div>
@@ -44,16 +51,19 @@
                     <li class="menu-item-has-children">
                         <a href="index.php?module=category">category</a>
                         <ul class="sub-menu">
+                            <li><a href="index.php?module=category&typeid=pop">Pop</a></li>
+                            <li><a href="index.php?module=category&typeid=rock">Rock</a></li>
                             <li><a href="index.php?module=category&typeid=jazz">Jazz</a></li>
                             <li><a href="index.php?module=category&typeid=rap">Rap</a></li>
-                            <li><a href="index.php?module=category&typeid=rock">Rock</a></li>
-                            <li><a href="index.php?module=category&typeid=pop">Pop</a></li>
                             <li><a href="index.php?module=category&typeid=classical">Classical</a></li>
                         </ul>
 
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="index.php?module=event">Events&nbsp</a>
+                        <a href="index.php?module=event">Events</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="index.php?module=review">REVIEWS&nbsp</a>
                     </li>
 
                 </ul>

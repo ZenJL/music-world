@@ -23008,3 +23008,77 @@ ul.products li.product-two .ajax_add_to_cart i {
   -o-transition: all 0.8s cubic-bezier(0, 1.09, 1, 1);
   transition: all 0.8s cubic-bezier(0, 1.09, 1, 1);
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+
+
+#intro{
+  text-align: center;
+
+}
+
+
+.form_username, .form_keyword, .tweetCountList{
+  /* width: 415px; */
+  margin: auto;
+  text-align: center;
+}
+.form-group{
+  /* width: 415px; */
+  margin: auto;
+}
+
+.customSubmit{
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+  text-align:center;
+}
+
+.customLink
+{
+  margin: auto;
+  margin-top: 10px;
+}
+
+.navbuttons{
+
+  text-align: center;
+}
+
+.btnsize{
+  width: 150px;
+  height: 40px;
+  margin: auto;
+  margin-left: 3px;
+  margin-right: 3px;
+  font-size: x-large;
+  padding-bottom: 40px;
+
+}
+
+.headertext{
+  text-align: right;
+  margin-right: 10px;
+  font-size: large;
+
+}
+
+.addProduct{
+  margin: auto;
+  margin-top: 20px;
+}
+
+.errormessage{
+  text-align:center;
+  margin:auto;
+  margin-top: 10px;
+  font-size: medium;
+}
+.usernameTable{
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #25252a;
+}

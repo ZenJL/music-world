@@ -64,6 +64,11 @@ $artists = get_all_artist($conn);?>
                         <h6>Album Description</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                     </div>
+                    <div>
+                        <p>Album download count: <?php echo$albums[$albumid2-1]["album_download_count"];?></p>
+                        <?php if(isset($_SESSION["user"])){?><a href="">Download album</a><?php } ?>
+
+                    </div>
 
                 </div>
             </div>
