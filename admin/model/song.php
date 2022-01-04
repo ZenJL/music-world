@@ -1,17 +1,4 @@
-<?php 
-function get_all_category ($conn,$edit = false,$id = null) {
-    if ($edit) {
-        $stmt = $conn->prepare("SELECT * FROM category WHERE id != :id");
-        $stmt->bindParam(":id",$id,PDO::PARAM_STR);
-    } else {
-        $stmt = $conn->prepare("SELECT * FROM category");
-    }
-
-    $stmt->execute();
-    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $data;
-}
-
+<?php
 function create_song ($conn,$song) {
     $stmt = $conn->prepare("INSERT INTO `song`(`song_name`, `category_id`, `id_album`, `song_lyric`,  `id_artist`) VALUES (:song_name, :category_id, :id_album, :song_lyric, :id_artist)");
     $stmt->bindParam(':song_name',$song["song_name"],PDO::PARAM_STR);

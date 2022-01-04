@@ -1,16 +1,5 @@
 <?php
-function get_all_category ($conn,$edit = false,$id = null) {
-    if ($edit) {
-        $stmt = $conn->prepare("SELECT * FROM category WHERE id != :id");
-        $stmt->bindParam(":id",$id,PDO::PARAM_STR);
-    } else {
-        $stmt = $conn->prepare("SELECT * FROM category");
-    }
 
-    $stmt->execute();
-    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $data;
-}
 
 function create_album ($conn,$album) {
     $stmt = $conn->prepare("INSERT INTO `album`(`album_name`, `category_id`, `album_date`, `album_image`, `id_artist`) VALUES (:album_name, :category_id, :album_date, :album_image, :id_artist)");

@@ -138,13 +138,37 @@
                         <li class="nav-item">
                             <a href="index.php?module=song&action=index" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>List Songs</p>
+                                <p>List songs</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="index.php?module=song&action=create" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Add Songs</p>
+                                <p>Add song</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-archive"></i>
+                        <p>
+                            Event
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="index.php?module=event&action=index" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>List events</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.php?module=event&action=create" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add event</p>
                             </a>
                         </li>
                     </ul>

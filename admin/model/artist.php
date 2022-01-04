@@ -1,16 +1,4 @@
-<?php 
-function get_all_category ($conn,$edit = false,$id = null) {
-    if ($edit) {
-        $stmt = $conn->prepare("SELECT * FROM category WHERE id != :id");
-        $stmt->bindParam(":id",$id,PDO::PARAM_STR);
-    } else {
-        $stmt = $conn->prepare("SELECT * FROM category");
-    }
-
-    $stmt->execute();
-    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    return $data;
-}
+<?php
 
 function create_artist ($conn,$artist) {
     $stmt = $conn->prepare("INSERT INTO `artist`(`artist_name`, `category_id`, `artist_details`, `artist_achievements`, `artist_image`) VALUES (:artist_name, :category_id, :artist_details, :artist_achievements, :artist_image)");

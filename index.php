@@ -41,6 +41,7 @@ ob_start();
     <link rel="stylesheet" href="public/css/app.css" type="text/css">
     <link id="theme" rel="stylesheet" href="public/css/theme-color/theme-default.css" type="text/css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body id="home-version-1" class="home-version-1" data-style="default">
@@ -85,17 +86,10 @@ ob_start();
     // check module
     if (isset($_GET["module"])):
         $module = $_GET["module"];
-        // check action
-        $type = null;
-        if (isset($_GET["type"])):
-            $type = $_GET["type"];
-        else:
-            $type = "index";
-        endif;
         // check correct module & action
-        if (file_exists("category/$type.php")):
-            include ("category/$type.php");
-        elseif (file_exists("modules/$module.php") && empty($_GET["type"])):
+        if (file_exists("category/catindex.php") && isset($_GET["typeid"])):
+            include ("category/catindex.php");
+        elseif (file_exists("modules/$module.php") && empty($_GET["typeid"])):
             // include UI of each action in each module
             include ("modules/$module.php");
         else:

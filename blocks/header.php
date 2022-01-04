@@ -30,7 +30,9 @@
                     <img src="public/image/logo-sticky.png" alt="logo">
                 </a>
             </div>
+
             <div class="nav float-right">
+
                 <ul id="main-header-menu">
                     <li class="menu-item-has-children">
                         <a href="index.php">Home</a>
@@ -42,21 +44,35 @@
                     <li class="menu-item-has-children">
                         <a href="index.php?module=category">category</a>
                         <ul class="sub-menu">
-                            <li><a href="index.php?module=category&type=jazz">Jazz</a></li>
-                            <li><a href="index.php?module=category&type=rnb">R&B</a></li>
-                            <li><a href="index.php?module=category&type=rock">Rock</a></li>
-                            <li><a href="index.php?module=category&type=pop">Pop</a></li>
-                            <li><a href="index.php?module=category&type=classical">Classical</a></li>
+                            <li><a href="index.php?module=category&typeid=jazz">Jazz</a></li>
+                            <li><a href="index.php?module=category&typeid=rap">Rap</a></li>
+                            <li><a href="index.php?module=category&typeid=rock">Rock</a></li>
+                            <li><a href="index.php?module=category&typeid=pop">Pop</a></li>
+                            <li><a href="index.php?module=category&typeid=classical">Classical</a></li>
                         </ul>
 
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="index.php?module=event">Events</a>
+                        <a href="index.php?module=event">Events&nbsp</a>
                     </li>
 
                 </ul>
+                <ul>
+                    <li>
+                        <form action="" method="GET">
+                            <div class="form-row">
+                                <input class="form-control mr-sm-2 mt-4" style="width:200px" type="search"  name="search" id="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-light mr-sm-2 mt-4" style="width:80px" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+
 
             </div>
+
+
+
             <!-- /.nav -->
         </div>
         <!-- /.tim-container -->

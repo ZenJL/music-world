@@ -24,7 +24,6 @@ if(isset($_POST["login"])) {
             $data = get_user($conn, $data);
             $_SESSION["login"]["id"] = $data["id"];
             $_SESSION["login"]["email"] = $data["email"];
-            var_dump($data);
             $_SESSION["login"]["level"] = $data["level"];
             header("location:index.php");
             exit();

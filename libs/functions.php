@@ -96,4 +96,11 @@
         return $data;
     }
 
+    function get_all_music_category_instrument($conn){
+        $stmt = $conn->prepare("SELECT * FROM music_category_instrument ORDER BY id_instrument ASC");
+        $stmt->execute();
+        $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $data;
+    }
+
 ?>
